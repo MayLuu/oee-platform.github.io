@@ -1,0 +1,1945 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<template id="__bundler_thumbnail" data-bg-color="#16273a">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#16273a"/>
+    <rect x="240" y="300" width="90" height="200" rx="10" fill="#5980a6"/>
+    <rect x="370" y="220" width="90" height="280" rx="10" fill="#7fa3c4"/>
+    <rect x="500" y="360" width="90" height="140" rx="10" fill="#5980a6"/>
+    <rect x="630" y="170" width="90" height="330" rx="10" fill="#a8c4dd"/>
+    <rect x="760" y="280" width="90" height="220" rx="10" fill="#5980a6"/>
+    <rect x="240" y="540" width="610" height="14" rx="7" fill="#33465c"/>
+    <text x="240" y="640" font-family="Inter,sans-serif" font-size="72" font-weight="700" fill="#ffffff">OEE</text>
+  </svg>
+</template>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/industry-5680bd62-7bc9-444d-857f-2b4a723744ba/styles.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+<script src="_ds/industry-5680bd62-7bc9-444d-857f-2b4a723744ba/_ds_bundle.js"></script>
+<style>
+:root{--font-heading:'Inter',system-ui,sans-serif;--font-body:'Inter',system-ui,sans-serif;--font-heading-weight:700;
+  --color-bg:#f6f7f9;--color-divider:rgba(16,24,40,.09);--color-surface:#fff}
+h1,h2,h3,h4,h5,h6{color:#16273a}
+h1,h2,h3,h4,h5,h6{letter-spacing:-.012em}
+body{margin:0;background:var(--color-bg);font-family:var(--font-body)}
+.oee-body div[style*="border:1px solid var(--color-divider)"]{border-radius:10px;overflow:hidden;box-shadow:0 1px 2px rgba(16,24,40,.05)}
+.oee-body .oee-scroll{border-radius:0}
+.card,.dialog,.input,.btn,.seg,.tag{border-radius:8px}
+.input,.btn{min-height:38px}
+.tag{border-radius:5px}
+.btn-icon{border-radius:6px}
+.oee-maprow{border-radius:10px;overflow:hidden;box-shadow:0 1px 2px rgba(16,24,40,.05)}
+.oee-nav{border-radius:6px}
+.oee-tabs{display:flex;flex-wrap:wrap;gap:2px;padding:0 22px;border-bottom:1px solid var(--color-divider);background:#fff;position:sticky;top:61px;z-index:4}
+.oee-tab{appearance:none;background:transparent;border:0;border-bottom:2px solid transparent;padding:10px 12px;font:inherit;font-size:13.5px;color:#5d5d60;cursor:pointer;margin-bottom:-1px}
+.oee-tab:hover{color:var(--color-accent-800);background:rgba(89,128,166,.07)}
+.oee-tab[data-on="1"]{color:#16273a;border-bottom-color:var(--color-accent);font-weight:600}
+@media (max-width:1100px){.oee-fresh,.oee-who{display:none !important}}
+a{color:var(--color-accent)}a:hover{color:var(--color-accent-700)}
+.oee-nav{position:relative;display:flex;align-items:center;gap:11px;padding:10px 12px;color:#6b7280;font-size:13.5px;cursor:pointer;text-decoration:none;line-height:1.35}
+.oee-nav:hover{background:rgba(89,128,166,.08);color:#16273a}
+.oee-nav[data-on="1"]{background:rgba(89,128,166,.12);color:#16273a;font-weight:600}
+.oee-nav[data-on="1"]::before{content:"";position:absolute;left:-8px;top:8px;bottom:8px;width:3px;border-radius:0 3px 3px 0;background:var(--color-accent)}
+.oee-nav[data-on="1"] svg{color:var(--color-accent)}
+.oee-subnav{position:relative;display:flex;align-items:center;gap:9px;padding:7px 10px 7px 27px;margin-left:8px;border-left:1px solid var(--color-divider);color:#7b8794;font-size:12.5px;cursor:pointer;text-decoration:none;line-height:1.35;border-radius:0 6px 6px 0}
+.oee-subnav:hover{background:rgba(89,128,166,.07);color:#16273a}
+.oee-subnav[data-on="1"]{color:var(--color-accent-800);font-weight:600;background:rgba(89,128,166,.09)}
+.oee-subdot{width:5px;height:5px;border-radius:50%;background:currentColor;opacity:.45;flex:none;margin-left:-14px}
+.oee-subnav[data-on="1"] .oee-subdot{opacity:1;background:var(--color-accent)}
+.oee-grp{font-family:var(--font-heading);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:#6f86a0;padding:16px 14px 5px}
+.kpi{padding:12px 13px;background:transparent}
+.kpi-l{font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:#8a93a0;font-weight:500;line-height:1.3;min-height:28px}
+.kpi-v{font-size:30px;font-weight:700;line-height:1;margin-top:7px;color:#16273a;letter-spacing:-.02em}
+.kpi-s{font-size:11px;color:#76797b;margin-top:5px}
+.oee-th{text-align:left;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#8a93a0;font-weight:600;padding:10px;background:#fafbfc;border-bottom:1px solid var(--color-divider);white-space:nowrap}
+.oee-td{padding:11px 10px;border-bottom:1px solid rgba(16,24,40,.07);font-size:13px;vertical-align:middle}
+.oee-row:hover{background:rgba(89,128,166,.07);cursor:pointer}
+.oee-row[data-on="1"]{background:rgba(89,128,166,.13)}
+.mk{cursor:pointer}
+.mk:hover circle:first-of-type{stroke:var(--color-accent-900)}
+.seg2{display:inline-flex;border:1px solid var(--color-divider)}
+.seg2 button{font-family:var(--font-heading);font-size:12.5px;padding:5px 11px;background:transparent;border:0;border-left:1px solid var(--color-divider);cursor:pointer;color:var(--color-text)}
+.seg2 button:first-child{border-left:0}
+.seg2 button[data-on="1"]{background:var(--color-accent);color:var(--color-bg)}
+.seg2 button:not([data-on="1"]):hover{background:rgba(29,31,32,.07)}
+.btn[data-on="1"]{background:var(--color-accent-200);border-color:var(--color-accent);color:var(--color-accent-800)}
+.oee-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,372px);gap:12px;align-items:start}
+.oee-scroll{overflow-x:auto}
+.oee-chip{appearance:none;border:1px solid var(--color-divider);background:#fff;border-radius:999px;padding:6px 12px;font:inherit;font-size:12.5px;color:#5d5d60;cursor:pointer;line-height:1.2}
+.oee-chip:hover{background:rgba(89,128,166,.08);color:#16273a}
+.oee-chip[data-on="1"]{background:var(--color-accent-200,#dfe8f1);border-color:var(--color-accent);color:var(--color-accent-800,#2c455d);font-weight:600}
+.oee-menu{display:none;position:absolute;right:0;top:calc(100% + 5px);z-index:20;min-width:158px;background:#fff;border:1px solid var(--color-divider);border-radius:8px;box-shadow:0 10px 26px rgba(16,24,40,.12);padding:4px}
+.oee-menu[data-open="1"]{display:block}
+.oee-menu-i{display:block;width:100%;text-align:left;appearance:none;border:0;background:transparent;font:inherit;font-size:13px;color:#1d1f20;padding:8px 10px;border-radius:6px;cursor:pointer}
+.oee-menu-i:hover{background:rgba(89,128,166,.09)}
+.oee-rpt table{font-variant-numeric:tabular-nums}
+.oee-rpt .oee-td{padding:12px 12px;border-bottom:1px solid rgba(16,24,40,.05)}
+.oee-rpt .oee-th{padding:10px 12px;background:#fff;border-bottom:1px solid rgba(16,24,40,.09)}
+.oee-rpt tbody tr:hover{background:rgba(89,128,166,.04)}
+.oee-rpt th:first-child,.oee-rpt td:first-child{position:sticky;left:0;background:#fff;z-index:1;box-shadow:1px 0 0 rgba(16,24,40,.06)}
+.oee-rpt tbody tr:hover td:first-child{background:#f7f9fb}
+.oee-split[data-detail="popup"]{grid-template-columns:minmax(0,1fr)}
+.oee-detailwrap[data-mode="popup"]{position:fixed !important;inset:0;z-index:40;display:none;align-items:flex-start;justify-content:center;padding:44px 16px;background:rgba(16,24,40,.45);overflow:auto}
+.oee-detailwrap[data-mode="popup"][data-open="1"]{display:flex}
+.oee-detailwrap[data-mode="popup"] > div{width:100%;max-width:540px;border-radius:10px;box-shadow:0 24px 56px rgba(16,24,40,.26)}
+.oee-detailwrap[data-mode="side"] .oee-detailclose{display:none}
+.oee-detailclose{appearance:none;border:0;background:transparent;padding:4px;line-height:0;color:#76797b;cursor:pointer;border-radius:6px}
+.oee-detailclose:hover{background:rgba(29,31,32,.07);color:#1d1f20}
+@media (max-width:1180px){.oee-split{grid-template-columns:minmax(0,1fr)}.oee-split > div:last-child:not(.oee-detailwrap){position:static !important}}
+.oee-maprow{display:grid;grid-template-columns:minmax(0,1fr) 312px;border:1px solid var(--color-divider);background:#fff}
+@media (max-width:1180px){.oee-maprow{grid-template-columns:minmax(0,1fr)}.oee-maprow > div:first-child{border-right:0 !important;border-bottom:1px solid var(--color-divider)}}
+@media (max-width:1180px){.oee-kpi6{grid-template-columns:repeat(3,minmax(0,1fr)) !important}.oee-kpi4{grid-template-columns:repeat(2,minmax(0,1fr)) !important}.oee-charts{grid-template-columns:minmax(0,1fr) !important}}
+</style>
+</helmet>
+<div style="display:grid;grid-template-columns:246px minmax(0,1fr);min-height:100vh;background:var(--color-bg);color:var(--color-text)">
+
+  <aside style="background:#fff;border-right:1px solid var(--color-divider);display:flex;flex-direction:column;position:sticky;top:0;height:100vh;overflow:auto">
+    <div style="padding:17px 16px 15px;display:flex;align-items:center;gap:10px">
+      <div style="width:32px;height:32px;border-radius:9px;background:var(--color-accent);display:grid;place-items:center;flex:none">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="1.8"><path d="M3 20h18M6 20V9m6 11V4m6 16v-7"></path></svg>
+      </div>
+      <div style="min-width:0">
+        <div style="font-size:16px;font-weight:700;color:#16273a;line-height:1.15">OEE Platform</div>
+        <div style="font-size:11px;color:#8a93a0">PTSC M&amp;C · POC</div>
+      </div>
+    </div>
+
+    <nav style="display:flex;flex-direction:column;padding:6px 12px 0;gap:2px">
+      <sc-for list="{{ nav }}" as="n" hint-placeholder-count="18">
+        <div style="display:flex;flex-direction:column;gap:2px">
+          <a class="oee-nav" data-on="{{ n.on }}" onClick="{{ n.go }}">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" style="flex:none" dangerouslySetInnerHTML="{{ n.icon }}"></svg>
+            {{ n.label }}</a>
+          <sc-for list="{{ n.subs }}" as="s" hint-placeholder-count="0">
+            <a class="oee-subnav" data-on="{{ s.on }}" onClick="{{ s.go }}"><span class="oee-subdot"></span>{{ s.label }}</a>
+          </sc-for>
+        </div>
+      </sc-for>
+    </nav>
+
+    <div style="margin-top:auto;margin:auto 12px 14px;padding:12px;border-radius:10px;background:#f4f6f8;font-size:11.5px;color:#6b7280;line-height:1.5">
+      Phạm vi POC: 06 thiết bị<br>02 máy hàn · 02 máy nén khí · 02 xe tải cẩu
+    </div>
+  </aside>
+
+  <main style="min-width:0;display:flex;flex-direction:column">
+    <header style="display:flex;align-items:center;gap:16px;padding:14px 22px;border-bottom:1px solid var(--color-divider);background:#fff;position:sticky;top:0;z-index:5">
+      <div style="flex:1 1 220px;min-width:200px">
+        <div style="font-size:11.5px;color:#8a93a0">{{ crumb }}</div>
+        <h4 style="margin:2px 0 0;font-size:22px;font-weight:700">{{ title }}</h4>
+      </div>
+      <div class="oee-fresh" style="display:flex;align-items:center;gap:8px;flex:none;white-space:nowrap;font-size:12px;color:#5d5d60">
+        <span style="width:7px;height:7px;border-radius:50%;background:#3d8a5b;display:inline-block"></span>
+        Dữ liệu cập nhật 12 giây trước · độ trễ 18s
+      </div>
+      <button class="btn btn-secondary" style="gap:7px;flex:none;white-space:nowrap">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M21 12a9 9 0 1 1-3-6.7M21 4v5h-5"></path></svg>Làm mới</button>
+      <div style="display:flex;align-items:center;gap:9px;flex:none;padding-left:14px;border-left:1px solid var(--color-divider)">
+        <div style="width:30px;height:30px;border:1px solid var(--color-divider);border-radius:6px;display:grid;place-items:center;font-size:13px;font-weight:600">NH</div>
+        <div class="oee-who" style="line-height:1.2">
+          <div style="font-size:13px">Nguyễn Văn Hải</div>
+          <div style="font-size:11px;color:#76797b">Cán bộ quản lý MMTB</div>
+        </div>
+      </div>
+    </header>
+
+    <sc-if value="{{ hasTabs }}" hint-placeholder-val="{{ true }}">
+      <div class="oee-tabs">
+        <sc-for list="{{ tabs }}" as="t" hint-placeholder-count="4">
+          <button class="oee-tab" data-on="{{ t.on }}" onClick="{{ t.go }}">{{ t.label }}</button>
+        </sc-for>
+      </div>
+    </sc-if>
+
+    <div class="oee-body" style="padding:18px 22px 34px;display:flex;flex-direction:column;gap:16px">
+
+      <sc-if value="{{ isDash }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--color-divider);background:#fff">
+          <span style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#6d6f71">Bộ lọc</span>
+          <div class="seg2">
+            <button data-on="1">Hôm nay</button><button>7 ngày</button><button>30 ngày</button><button>Tuỳ chọn</button>
+          </div>
+          <select class="input" style="width:190px;height:34px"><option>Tất cả nhóm thiết bị</option><option>Máy hàn</option><option>Máy nén khí</option><option>Xe tải cẩu</option></select>
+          <select class="input" style="width:190px;height:34px"><option>Tất cả khu vực</option><option>Xưởng hàn A</option><option>Xưởng hàn B</option><option>Bãi lắp ráp</option><option>Cầu cảng số 1</option></select>
+          <select class="input" style="width:170px;height:34px"><option>Tất cả dự án</option><option>Dự án Block A-04</option><option>Dự án Jacket LQ-02</option></select>
+          <button class="btn btn-primary" style="margin-left:auto">Áp dụng</button>
+          <button class="btn btn-secondary">Xoá lọc</button>
+        </div>
+
+        <div class="oee-kpi6" style="display:grid;grid-template-columns:repeat(6,minmax(0,1fr));border:1px solid var(--color-divider);background:#fff">
+          <div style="display:flex;align-items:center;gap:12px;padding:15px 14px;border-right:1px solid var(--color-divider)">
+            <div style="width:36px;height:36px;border-radius:10px;flex:none;background:#5980a622;display:grid;place-items:center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5980a6" strokeWidth="1.6"><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9z"></path><path d="m12 12 8-4.5M12 12v9M12 12 4 7.5"></path></svg></div>
+            <div style="min-width:0">
+              <div style="font-size:27px;font-weight:700;line-height:1;color:#16273a">06</div>
+              <div style="font-size:12px;color:#8a93a0;margin-top:5px">Tổng thiết bị POC</div>
+              <div style="font-size:11.5px;color:#6b7280;margin-top:2px">02 hàn · 02 nén khí · 02 cẩu</div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;padding:15px 14px;border-right:1px solid var(--color-divider)">
+            <div style="width:36px;height:36px;border-radius:10px;flex:none;background:#3d8a5b22;display:grid;place-items:center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3d8a5b" strokeWidth="1.6"><path d="M3 12h4l3 7 4-14 3 7h4"></path></svg></div>
+            <div style="min-width:0">
+              <div style="font-size:27px;font-weight:700;line-height:1;color:#2f6b46">03</div>
+              <div style="font-size:12px;color:#8a93a0;margin-top:5px">Đang hoạt động</div>
+              <div style="font-size:11.5px;color:#6b7280;margin-top:2px">50% đội thiết bị</div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;padding:15px 14px;border-right:1px solid var(--color-divider)">
+            <div style="width:36px;height:36px;border-radius:10px;flex:none;background:#98989b22;display:grid;place-items:center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#98989b" strokeWidth="1.6"><circle cx="12" cy="12" r="9"></circle><path d="M9 9h6v6H9z"></path></svg></div>
+            <div style="min-width:0">
+              <div style="font-size:27px;font-weight:700;line-height:1;color:#5d5d60">01</div>
+              <div style="font-size:12px;color:#8a93a0;margin-top:5px">Đang dừng</div>
+              <div style="font-size:11.5px;color:#6b7280;margin-top:2px">Dừng chờ vật tư 46 phút</div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;padding:15px 14px;border-right:1px solid var(--color-divider)">
+            <div style="width:36px;height:36px;border-radius:10px;flex:none;background:#b4552d22;display:grid;place-items:center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b4552d" strokeWidth="1.6"><path d="M12 3 2 20h20z"></path><path d="M12 10v4M12 17h.01"></path></svg></div>
+            <div style="min-width:0">
+              <div style="font-size:27px;font-weight:700;line-height:1;color:#8c3b1e">01</div>
+              <div style="font-size:12px;color:#8a93a0;margin-top:5px">Lỗi / bất thường</div>
+              <div style="font-size:11.5px;color:#6b7280;margin-top:2px">CMP-B-0348 · áp suất thấp</div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;padding:15px 14px;border-right:1px solid var(--color-divider)">
+            <div style="width:36px;height:36px;border-radius:10px;flex:none;background:#41618022;display:grid;place-items:center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#416180" strokeWidth="1.6"><path d="M2 8.5a15 15 0 0 1 20 0M5 12a10 10 0 0 1 14 0M8.5 15.5a5 5 0 0 1 7 0"></path><circle cx="12" cy="19" r="1"></circle><path d="m3 3 18 18"></path></svg></div>
+            <div style="min-width:0">
+              <div style="font-size:27px;font-weight:700;line-height:1;color:#416180">01</div>
+              <div style="font-size:12px;color:#8a93a0;margin-top:5px">Mất kết nối</div>
+              <div style="font-size:11.5px;color:#6b7280;margin-top:2px">TRC-02-7815 · 27 phút</div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;padding:15px 14px">
+            <div style="width:36px;height:36px;border-radius:10px;flex:none;background:#5980a622;display:grid;place-items:center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5980a6" strokeWidth="1.6"><circle cx="9" cy="8" r="3"></circle><path d="M3 19a6 6 0 0 1 12 0M17 11h4M19 9v4"></path></svg></div>
+            <div style="min-width:0">
+              <div style="font-size:27px;font-weight:700;line-height:1;color:#16273a">04</div>
+              <div style="font-size:12px;color:#8a93a0;margin-top:5px">Phiên đang mở</div>
+              <div style="font-size:11.5px;color:#6b7280;margin-top:2px">02 chờ xác nhận</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="oee-kpi4" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px">
+          <div style="padding:14px;border:1px solid var(--color-divider);background:#fff">
+            <div class="kpi-l" style="min-height:0">OEE trung bình</div>
+            <div style="display:flex;align-items:baseline;gap:9px"><div class="kpi-v">72,6<span style="font-size:17px">%</span></div>
+              <span style="font-size:12px;color:#2f6b46">▲ 3,1 đ% so với kỳ trước</span></div>
+            <div style="height:7px;background:var(--color-neutral-200);margin-top:9px"><div style="width:72.6%;height:100%;background:var(--color-accent)"></div></div>
+            <div style="display:flex;gap:14px;margin-top:8px;font-size:11.5px;color:#5d5d60">
+              <span>A 84,2%</span><span>P 91,5%</span><span>Q 94,3%</span></div>
+          </div>
+          <div style="padding:14px;border:1px solid var(--color-divider);background:#fff">
+            <div class="kpi-l" style="min-height:0">OLE trung bình</div>
+            <div style="display:flex;align-items:baseline;gap:9px"><div class="kpi-v">68,1<span style="font-size:17px">%</span></div>
+              <span style="font-size:12px;color:#8c3b1e">▼ 1,4 đ%</span></div>
+            <div style="height:7px;background:var(--color-neutral-200);margin-top:9px"><div style="width:68.1%;height:100%;background:var(--color-accent-600)"></div></div>
+            <div style="display:flex;gap:14px;margin-top:8px;font-size:11.5px;color:#5d5d60">
+              <span>12 thợ · 4 ca</span><span>Giờ hồ quang 41,2h</span></div>
+          </div>
+          <div style="padding:14px;border:1px solid var(--color-divider);background:#fff">
+            <div class="kpi-l" style="min-height:0">Tỷ lệ thu thập dữ liệu</div>
+            <div style="display:flex;align-items:baseline;gap:9px"><div class="kpi-v">97,3<span style="font-size:17px">%</span></div>
+              <span class="tag tag-accent">Đạt ≥ 95%</span></div>
+            <div style="height:7px;background:var(--color-neutral-200);margin-top:9px"><div style="width:97.3%;height:100%;background:var(--color-accent)"></div></div>
+            <div style="margin-top:8px;font-size:11.5px;color:#5d5d60">4.812 / 4.945 bản ghi kỳ vọng · 24h</div>
+          </div>
+          <div style="padding:14px;border:1px solid var(--color-divider);background:#fff">
+            <div class="kpi-l" style="min-height:0">Độ trễ cập nhật (p95)</div>
+            <div style="display:flex;align-items:baseline;gap:9px"><div class="kpi-v">18<span style="font-size:17px">s</span></div>
+              <span class="tag tag-accent">Ngưỡng 60s</span></div>
+            <div style="height:7px;background:var(--color-neutral-200);margin-top:9px"><div style="width:30%;height:100%;background:var(--color-accent-500)"></div></div>
+            <div style="margin-top:8px;font-size:11.5px;color:#5d5d60">Sai lệch giờ chạy máy: 3,2% (ngưỡng 5%)</div>
+          </div>
+        </div>
+
+        <div class="oee-maprow">
+          <div style="min-width:0;border-right:1px solid var(--color-divider)">
+            <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:10px 13px;border-bottom:1px solid var(--color-divider)">
+              <h5 style="margin:0;font-size:15px">Bản đồ giám sát thiết bị — Cảng &amp; Xưởng PTSC M&amp;C</h5>
+              <span class="tag tag-neutral">Sơ đồ 2D · POC</span>
+              <div style="display:flex;align-items:center;gap:6px;margin-left:auto">
+                <div style="position:relative">
+                  <svg style="position:absolute;left:8px;top:9px" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#76797b" strokeWidth="1.5"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+                  <input class="input" style="width:170px;height:32px;padding-left:27px;background:#fff" placeholder="Tìm mã thiết bị…" value="{{ q }}" onChange="{{ onSearch }}">
+                </div>
+                <button class="btn btn-secondary btn-icon" onClick="{{ zoomOut }}" style="width:32px;height:32px">−</button>
+                <button class="btn btn-secondary btn-icon" onClick="{{ zoomIn }}" style="width:32px;height:32px">+</button>
+                <button class="btn btn-secondary" onClick="{{ resetView }}" style="height:32px">Reset</button>
+              </div>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;align-items:center;gap:7px;padding:8px 13px;border-bottom:1px solid var(--color-divider);font-size:12px">
+              <span style="color:#6d6f71;font-size:11px;letter-spacing:.06em;text-transform:uppercase">Lớp hiển thị</span>
+              <button class="btn btn-secondary" style="height:28px;font-size:12.5px" data-on="{{ fWeld }}" onClick="{{ tWeld }}">Máy hàn</button>
+              <button class="btn btn-secondary" style="height:28px;font-size:12.5px" data-on="{{ fComp }}" onClick="{{ tComp }}">Máy nén khí</button>
+              <button class="btn btn-secondary" style="height:28px;font-size:12.5px" data-on="{{ fCrane }}" onClick="{{ tCrane }}">Xe tải cẩu</button>
+              <span style="width:1px;height:18px;background:var(--color-divider);margin:0 4px"></span>
+              <span style="display:flex;align-items:center;gap:5px"><span style="width:8px;height:8px;background:#3d8a5b;display:inline-block"></span>Hoạt động</span>
+              <span style="display:flex;align-items:center;gap:5px"><span style="width:8px;height:8px;background:#98989b;display:inline-block"></span>Dừng</span>
+              <span style="display:flex;align-items:center;gap:5px"><span style="width:8px;height:8px;background:#b4552d;display:inline-block"></span>Lỗi</span>
+              <span style="display:flex;align-items:center;gap:5px"><span style="width:8px;height:8px;border:1px dashed #5d5d60;display:inline-block"></span>Mất kết nối</span>
+            </div>
+            <div style="background:#eceef0">
+              <svg viewBox="{{ viewBox }}" style="width:100%;aspect-ratio:1000/520;max-height:430px;height:auto;display:block;cursor:grab" onMouseDown="{{ dragStart }}" onMouseMove="{{ dragMove }}" onMouseUp="{{ dragEnd }}" onMouseLeave="{{ dragEnd }}">
+                <defs>
+                  <pattern id="gridp" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#d9dcdf" strokeWidth="1"></path></pattern>
+                  <pattern id="hatch" width="7" height="7" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="7" stroke="#c6ccd3" strokeWidth="1.4"></line></pattern>
+                </defs>
+                <rect x="0" y="0" width="1000" height="520" fill="#f2f2f3"></rect>
+                <rect x="0" y="0" width="1000" height="520" fill="url(#gridp)"></rect>
+                <rect x="0" y="430" width="1000" height="90" fill="#dfe6ec"></rect>
+                <path d="M0 430h1000" stroke="#5980a6" strokeWidth="2"></path>
+                <text x="16" y="466" fontSize="13" fill="#416180" letterSpacing="3">VỊNH / CẦU CẢNG</text>
+                <rect x="40" y="40" width="250" height="150" fill="url(#hatch)" stroke="#8e979f"></rect>
+                <text x="52" y="62" fontSize="14" fill="#41474c" fontFamily="Barlow Condensed">XƯỞNG HÀN A</text>
+                <text x="52" y="79" fontSize="11" fill="#6d7276">Bay 1 – Bay 4</text>
+                <rect x="40" y="215" width="250" height="140" fill="url(#hatch)" stroke="#8e979f"></rect>
+                <text x="52" y="237" fontSize="14" fill="#41474c" fontFamily="Barlow Condensed">XƯỞNG HÀN B</text>
+                <text x="52" y="254" fontSize="11" fill="#6d7276">Bay 1 – Bay 3</text>
+                <rect x="330" y="40" width="130" height="90" fill="url(#hatch)" stroke="#8e979f"></rect>
+                <text x="342" y="62" fontSize="13" fill="#41474c" fontFamily="Barlow Condensed">TRẠM KHÍ A</text>
+                <rect x="330" y="170" width="130" height="90" fill="url(#hatch)" stroke="#8e979f"></rect>
+                <text x="342" y="192" fontSize="13" fill="#41474c" fontFamily="Barlow Condensed">TRẠM KHÍ B</text>
+                <rect x="500" y="40" width="450" height="230" fill="none" stroke="#8e979f" strokeDasharray="6 5"></rect>
+                <text x="512" y="62" fontSize="14" fill="#41474c" fontFamily="Barlow Condensed">BÃI LẮP RÁP / YARD 2</text>
+                <rect x="330" y="300" width="620" height="100" fill="none" stroke="#8e979f" strokeDasharray="6 5"></rect>
+                <text x="342" y="322" fontSize="14" fill="#41474c" fontFamily="Barlow Condensed">TUYẾN ĐƯỜNG NỘI BỘ / BÃI CHỜ</text>
+                <rect x="560" y="435" width="330" height="26" fill="#c9d5df" stroke="#5980a6"></rect>
+                <text x="572" y="453" fontSize="12" fill="#2c455d" fontFamily="Barlow Condensed">CẦU CẢNG SỐ 1</text>
+                <sc-for list="{{ mapDevices }}" as="d" hint-placeholder-count="6">
+                  <g class="mk" transform="{{ d.tf }}" onClick="{{ d.pick }}">
+                    <circle r="17" fill="#ffffff" stroke="{{ d.dot }}" strokeWidth="2" strokeDasharray="{{ d.dash }}"></circle>
+                    <circle r="24" fill="none" stroke="{{ d.ring }}" strokeWidth="1.5"></circle>
+                    <g transform="translate(-8,-8)" dangerouslySetInnerHTML="{{ d.icon }}"></g>
+                    <rect x="-52" y="27" width="104" height="19" fill="#ffffff" stroke="#c3c8cd"></rect>
+                    <text x="0" y="40" textAnchor="middle" fontSize="11.5" fill="#1d1f20" fontFamily="Barlow">{{ d.id }}</text>
+                  </g>
+                </sc-for>
+              </svg>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;min-width:0">
+            <div style="padding:10px 13px;border-bottom:1px solid var(--color-divider);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#6d6f71">Thông tin nhanh thiết bị</div>
+            <sc-if value="{{ hasSel }}" hint-placeholder-val="{{ true }}">
+              <div style="padding:13px;display:flex;flex-direction:column;gap:11px">
+                <div>
+                  <div style="font-family:var(--font-heading);font-size:19px;line-height:1.15">{{ sel.name }}</div>
+                  <div style="font-size:12px;color:#6d6f71;margin-top:2px">{{ sel.id }} · {{ sel.typeLabel }}</div>
+                </div>
+                <div style="display:flex;gap:7px;flex-wrap:wrap">
+                  <span class="tag" style="{{ sel.badge }}">{{ sel.statusLabel }}</span>
+                  <span class="tag" style="{{ sel.connBadge }}">{{ sel.connLabel }}</span>
+                </div>
+                <div style="display:grid;grid-template-columns:auto 1fr;gap:6px 12px;font-size:12.5px">
+                  <span style="color:#6d6f71">Khu vực</span><span>{{ sel.area }}</span>
+                  <span style="color:#6d6f71">Dự án</span><span>{{ sel.project }}</span>
+                  <span style="color:#6d6f71">Người vận hành</span><span>{{ sel.operator }}</span>
+                  <span style="color:#6d6f71">Cập nhật</span><span>{{ sel.last }}</span>
+                </div>
+                <div style="border-top:1px solid var(--color-divider);padding-top:10px;display:grid;grid-template-columns:1fr 1fr;gap:9px">
+                  <sc-for list="{{ sel.params }}" as="p" hint-placeholder-count="4">
+                    <div><div style="font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#6d6f71">{{ p.k }}</div>
+                      <div style="font-family:var(--font-heading);font-size:18px">{{ p.v }}</div></div>
+                  </sc-for>
+                </div>
+                <div style="border-top:1px solid var(--color-divider);padding-top:10px">
+                  <div style="font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#6d6f71;margin-bottom:5px">OEE hôm nay</div>
+                  <div style="display:flex;align-items:baseline;gap:8px"><span style="font-family:var(--font-heading);font-size:26px">{{ sel.oee }}%</span>
+                    <span style="font-size:12px;color:#5d5d60">chạy {{ sel.run }} · dừng {{ sel.stop }}</span></div>
+                </div>
+                <button class="btn btn-primary btn-block" onClick="{{ goMon }}">Xem chi tiết thiết bị</button>
+              </div>
+            </sc-if>
+            <sc-if value="{{ noSel }}" hint-placeholder-val="{{ false }}">
+              <div style="flex:1;display:grid;place-items:center;padding:28px 20px;text-align:center;color:#76797b">
+                <div>
+                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#a8adb2" strokeWidth="1.5" style="margin:0 auto 9px"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+                  <div style="font-size:13px">Chọn một thiết bị trên bản đồ<br>để xem thông tin nhanh</div>
+                </div>
+              </div>
+            </sc-if>
+          </div>
+        </div>
+
+        <div class="oee-charts" style="display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:12px">
+          <div style="border:1px solid var(--color-divider);background:#fff">
+            <div style="display:flex;align-items:center;gap:10px;padding:10px 13px;border-bottom:1px solid var(--color-divider)">
+              <h5 style="margin:0;font-size:15px">Xu hướng OEE / OLE — 7 ngày</h5>
+              <div style="margin-left:auto;display:flex;gap:12px;font-size:11.5px;color:#5d5d60">
+                <span style="display:flex;align-items:center;gap:5px"><span style="width:14px;height:2px;background:#5980a6"></span>OEE</span>
+                <span style="display:flex;align-items:center;gap:5px"><span style="width:14px;height:2px;background:#b7b7ba"></span>OLE</span>
+              </div>
+            </div>
+            <svg viewBox="0 0 620 220" style="width:100%;height:226px;display:block">
+              <g stroke="#e3e4e6"><line x1="46" y1="20" x2="600" y2="20"></line><line x1="46" y1="60" x2="600" y2="60"></line><line x1="46" y1="100" x2="600" y2="100"></line><line x1="46" y1="140" x2="600" y2="140"></line><line x1="46" y1="180" x2="600" y2="180"></line></g>
+              <g fontSize="10.5" fill="#8a8d90"><text x="12" y="24">100</text><text x="18" y="64">85</text><text x="18" y="104">70</text><text x="18" y="144">55</text><text x="18" y="184">40</text></g>
+              <polyline points="80,112 167,104 254,120 341,96 428,88 515,92 580,84" fill="none" stroke="#5980a6" strokeWidth="2"></polyline>
+              <polyline points="80,128 167,124 254,136 341,118 428,112 515,126 580,120" fill="none" stroke="#b7b7ba" strokeWidth="2" strokeDasharray="5 4"></polyline>
+              <g fill="#5980a6"><circle cx="80" cy="112" r="3"></circle><circle cx="167" cy="104" r="3"></circle><circle cx="254" cy="120" r="3"></circle><circle cx="341" cy="96" r="3"></circle><circle cx="428" cy="88" r="3"></circle><circle cx="515" cy="92" r="3"></circle><circle cx="580" cy="84" r="3.5"></circle></g>
+              <g fontSize="10.5" fill="#8a8d90" textAnchor="middle"><text x="80" y="202">05/09</text><text x="167" y="202">06/09</text><text x="254" y="202">07/09</text><text x="341" y="202">08/09</text><text x="428" y="202">09/09</text><text x="515" y="202">10/09</text><text x="580" y="202">11/09</text></g>
+            </svg>
+          </div>
+          <div style="border:1px solid var(--color-divider);background:#fff">
+            <div style="padding:10px 13px;border-bottom:1px solid var(--color-divider)">
+              <h5 style="margin:0;font-size:15px">Phân bổ thời gian theo thiết bị — hôm nay</h5>
+            </div>
+            <div style="padding:13px;display:flex;flex-direction:column;gap:11px">
+              <sc-for list="{{ util }}" as="u" hint-placeholder-count="6">
+                <div>
+                  <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:4px"><span>{{ u.id }}</span><span style="color:#5d5d60">{{ u.note }}</span></div>
+                  <div style="display:flex;height:13px;background:var(--color-neutral-200)">
+                    <div style="{{ u.s1 }}"></div><div style="{{ u.s2 }}"></div><div style="{{ u.s3 }}"></div>
+                  </div>
+                </div>
+              </sc-for>
+              <div style="display:flex;gap:14px;font-size:11.5px;color:#5d5d60;padding-top:3px">
+                <span style="display:flex;align-items:center;gap:5px"><span style="width:10px;height:10px;background:#5980a6"></span>Vận hành</span>
+                <span style="display:flex;align-items:center;gap:5px"><span style="width:10px;height:10px;background:#b5cade"></span>Chờ / nổ máy</span>
+                <span style="display:flex;align-items:center;gap:5px"><span style="width:10px;height:10px;background:#d4d4d7"></span>Dừng</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="border:1px solid var(--color-divider);background:#fff">
+          <div style="display:flex;align-items:center;gap:10px;padding:10px 13px;border-bottom:1px solid var(--color-divider)">
+            <h5 style="margin:0;font-size:15px">Trạng thái thiết bị POC</h5>
+            <span class="tag tag-neutral">06 thiết bị</span>
+            <a href="#" onClick="{{ goMon }}" style="margin-left:auto;font-size:13px">Mở màn hình giám sát →</a>
+          </div>
+          <div class="oee-scroll"><table style="width:100%;min-width:820px;border-collapse:collapse">
+            <thead><tr>
+              <th class="oee-th">Mã thiết bị</th><th class="oee-th">Tên thiết bị</th><th class="oee-th">Loại</th>
+              <th class="oee-th">Khu vực</th><th class="oee-th">Trạng thái</th><th class="oee-th">Kết nối IoT</th>
+              <th class="oee-th">Thông số chính</th><th class="oee-th" style="text-align:right">OEE</th><th class="oee-th">Cập nhật</th>
+            </tr></thead>
+            <tbody>
+              <sc-for list="{{ devices }}" as="d" hint-placeholder-count="6">
+                <tr class="oee-row" onClick="{{ d.pick }}" data-on="{{ d.on }}">
+                  <td class="oee-td" style="font-variant-numeric:tabular-nums">{{ d.id }}</td>
+                  <td class="oee-td">{{ d.name }}</td>
+                  <td class="oee-td" style="color:#5d5d60">{{ d.typeLabel }}</td>
+                  <td class="oee-td" style="color:#5d5d60">{{ d.area }}</td>
+                  <td class="oee-td"><span class="tag" style="{{ d.badge }}">{{ d.statusLabel }}</span></td>
+                  <td class="oee-td"><span class="tag" style="{{ d.connBadge }}">{{ d.connLabel }}</span></td>
+                  <td class="oee-td" style="color:#5d5d60">{{ d.summary }}</td>
+                  <td class="oee-td" style="text-align:right;font-family:var(--font-heading);font-size:15px">{{ d.oee }}%</td>
+                  <td class="oee-td" style="color:#5d5d60">{{ d.last }}</td>
+                </tr>
+              </sc-for>
+            </tbody>
+          </table></div>
+        </div>
+
+        <div style="border:1px solid var(--color-divider);background:#fff">
+          <div style="display:flex;align-items:center;gap:10px;padding:10px 13px;border-bottom:1px solid var(--color-divider)">
+            <h5 style="margin:0;font-size:15px">Dữ liệu vận hành gần nhất</h5>
+            <span style="font-size:12px;color:#76797b">Luồng bản ghi IoT thô · 24 giờ qua</span>
+          </div>
+          <div class="oee-scroll"><table style="width:100%;min-width:760px;border-collapse:collapse">
+            <thead><tr>
+              <th class="oee-th" style="width:130px">Thời điểm</th><th class="oee-th" style="width:130px">Thiết bị</th>
+              <th class="oee-th" style="width:150px">Sự kiện</th><th class="oee-th">Giá trị ghi nhận</th>
+              <th class="oee-th" style="width:150px">Người vận hành</th><th class="oee-th" style="width:120px">Nguồn</th>
+            </tr></thead>
+            <tbody>
+              <tr><td class="oee-td">11/09 14:32:10</td><td class="oee-td">WLD-A-0142</td><td class="oee-td">Hồ quang bật</td><td class="oee-td" style="color:#5d5d60">I = 218 A · U = 26,4 V</td><td class="oee-td">Trần Quốc Minh</td><td class="oee-td"><span class="tag tag-accent">IoT tự động</span></td></tr>
+              <tr><td class="oee-td">11/09 14:31:47</td><td class="oee-td">CMP-B-0348</td><td class="oee-td">Cảnh báo áp suất</td><td class="oee-td" style="color:#8c3b1e">5,9 bar (ngưỡng 6,5 bar)</td><td class="oee-td" style="color:#76797b">—</td><td class="oee-td"><span class="tag tag-accent">IoT tự động</span></td></tr>
+              <tr><td class="oee-td">11/09 14:30:02</td><td class="oee-td">TRC-01-7742</td><td class="oee-td">Kết thúc chu kỳ cẩu</td><td class="oee-td" style="color:#5d5d60">Chu kỳ 6 phút 12 giây · 12,4 T</td><td class="oee-td">Phạm Văn Đức</td><td class="oee-td"><span class="tag tag-accent">IoT tự động</span></td></tr>
+              <tr><td class="oee-td">11/09 14:26:55</td><td class="oee-td">WLD-B-0217</td><td class="oee-td">Khai báo dừng máy</td><td class="oee-td" style="color:#5d5d60">Lý do: chờ vật tư</td><td class="oee-td">Lê Hoàng Nam</td><td class="oee-td"><span class="tag tag-outline">Người nhập</span></td></tr>
+              <tr><td class="oee-td">11/09 14:05:18</td><td class="oee-td">TRC-02-7815</td><td class="oee-td">Mất kết nối</td><td class="oee-td" style="color:#5d5d60">Gói tin cuối lúc 14:05</td><td class="oee-td" style="color:#76797b">—</td><td class="oee-td"><span class="tag tag-neutral">Hệ thống</span></td></tr>
+              <tr><td class="oee-td">11/09 13:58:41</td><td class="oee-td">CMP-A-0331</td><td class="oee-td">Ghi nhận điện năng</td><td class="oee-td" style="color:#5d5d60">42,8 kWh luỹ kế ca</td><td class="oee-td" style="color:#76797b">—</td><td class="oee-td"><span class="tag tag-accent">IoT tự động</span></td></tr>
+            </tbody>
+          </table></div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isMon }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--color-divider);background:#fff">
+          <div class="seg2">
+            <button data-on="1">Thời gian thực</button><button>Ca hiện tại</button><button>Hôm nay</button><button>Khoảng thời gian</button>
+          </div>
+          <div style="position:relative">
+            <svg style="position:absolute;left:8px;top:9px" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#76797b" strokeWidth="1.5"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+            <input class="input" style="width:200px;height:34px;padding-left:27px;background:#fff" placeholder="Tìm thiết bị…" value="{{ q }}" onChange="{{ onSearch }}">
+          </div>
+          <select class="input" style="width:175px;height:34px"><option>Tất cả nhóm thiết bị</option><option>Máy hàn</option><option>Máy nén khí</option><option>Xe tải cẩu</option></select>
+          <select class="input" style="width:175px;height:34px"><option>Tất cả trạng thái</option><option>Đang hoạt động</option><option>Đang dừng</option><option>Lỗi / bất thường</option><option>Mất kết nối</option></select>
+          <select class="input" style="width:175px;height:34px"><option>Tất cả khu vực</option><option>Xưởng hàn A</option><option>Xưởng hàn B</option><option>Bãi lắp ráp</option></select>
+          <span style="margin-left:auto;font-size:12px;color:#76797b">Tự động làm mới mỗi 30 giây</span>
+        </div>
+
+        <div class="oee-split">
+          <div style="border:1px solid var(--color-divider);background:#fff">
+            <div style="display:flex;align-items:center;gap:10px;padding:10px 13px;border-bottom:1px solid var(--color-divider)">
+              <h5 style="margin:0;font-size:15px">Danh sách thiết bị</h5>
+              <span style="font-size:12px;color:#76797b">{{ count }} thiết bị · nhấp vào dòng để xem chi tiết</span>
+              <button class="btn btn-secondary" style="margin-left:auto;height:30px;font-size:12.5px">Xuất Excel</button>
+            </div>
+            <div class="oee-scroll"><table style="width:100%;min-width:780px;border-collapse:collapse">
+              <thead><tr>
+                <th class="oee-th">Thiết bị</th><th class="oee-th">Loại</th><th class="oee-th">Khu vực</th>
+                <th class="oee-th">Trạng thái</th><th class="oee-th">Kết nối</th><th class="oee-th">Thông số vận hành</th><th class="oee-th">Cập nhật</th>
+              </tr></thead>
+              <tbody>
+                <sc-for list="{{ devices }}" as="d" hint-placeholder-count="6">
+                  <tr class="oee-row" onClick="{{ d.pick }}" data-on="{{ d.on }}">
+                    <td class="oee-td"><div>{{ d.id }}</div><div style="font-size:11.5px;color:#76797b">{{ d.name }}</div></td>
+                    <td class="oee-td" style="color:#5d5d60">{{ d.typeLabel }}</td>
+                    <td class="oee-td" style="color:#5d5d60">{{ d.area }}</td>
+                    <td class="oee-td"><span class="tag" style="{{ d.badge }}">{{ d.statusLabel }}</span></td>
+                    <td class="oee-td"><span class="tag" style="{{ d.connBadge }}">{{ d.connLabel }}</span></td>
+                    <td class="oee-td" style="color:#5d5d60">{{ d.summary }}</td>
+                    <td class="oee-td" style="color:#5d5d60">{{ d.last }}</td>
+                  </tr>
+                </sc-for>
+              </tbody>
+            </table></div>
+            <div style="display:flex;align-items:center;gap:10px;padding:9px 13px;border-top:1px solid var(--color-divider);font-size:12.5px;color:#5d5d60">
+              <span>Hiển thị {{ count }} / 6 bản ghi</span>
+              <div style="margin-left:auto;display:flex;gap:6px">
+                <button class="btn btn-secondary" style="height:28px;font-size:12.5px">Trước</button>
+                <button class="btn btn-secondary" style="height:28px;font-size:12.5px" data-on="1">1</button>
+                <button class="btn btn-secondary" style="height:28px;font-size:12.5px">Sau</button>
+              </div>
+            </div>
+          </div>
+
+          <div style="border:1px solid var(--color-divider);background:#fff;position:sticky;top:112px">
+            <sc-if value="{{ hasSel }}" hint-placeholder-val="{{ true }}">
+              <div>
+                <div style="padding:12px 13px;border-bottom:1px solid var(--color-divider)">
+                  <div style="font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#6d6f71">Chi tiết thiết bị</div>
+                  <div style="font-family:var(--font-heading);font-size:20px;line-height:1.2;margin-top:2px">{{ sel.name }}</div>
+                  <div style="font-size:12px;color:#6d6f71">{{ sel.id }} · {{ sel.typeLabel }} · {{ sel.area }}</div>
+                  <div style="display:flex;gap:7px;margin-top:8px;flex-wrap:wrap">
+                    <span class="tag" style="{{ sel.badge }}">{{ sel.statusLabel }}</span>
+                    <span class="tag" style="{{ sel.connBadge }}">{{ sel.connLabel }}</span>
+                    <span class="tag tag-neutral">QR: {{ sel.id }}</span>
+                  </div>
+                </div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--color-divider)">
+                  <sc-for list="{{ sel.params }}" as="p" hint-placeholder-count="4">
+                    <div style="padding:10px 13px;border-right:1px solid var(--color-divider);border-bottom:1px solid rgba(29,31,32,.07)">
+                      <div style="font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#6d6f71">{{ p.k }}</div>
+                      <div style="font-family:var(--font-heading);font-size:19px">{{ p.v }}</div>
+                    </div>
+                  </sc-for>
+                </div>
+                <div style="padding:12px 13px;border-bottom:1px solid var(--color-divider)">
+                  <div style="font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#6d6f71;margin-bottom:8px">Timeline trạng thái · 06:00 – 15:00</div>
+                  <div style="display:flex;height:22px;border:1px solid var(--color-divider)">
+                    <sc-for list="{{ sel.timeline }}" as="t" hint-placeholder-count="7">
+                      <div title="{{ t.title }}" style="{{ t.style }}"></div>
+                    </sc-for>
+                  </div>
+                  <div style="display:flex;justify-content:space-between;font-size:10.5px;color:#8a8d90;margin-top:4px">
+                    <span>06:00</span><span>09:00</span><span>12:00</span><span>15:00</span>
+                  </div>
+                  <div style="display:flex;gap:12px;margin-top:8px;font-size:11.5px;color:#5d5d60">
+                    <span style="display:flex;align-items:center;gap:5px"><span style="width:10px;height:10px;background:#5980a6"></span>Vận hành</span>
+                    <span style="display:flex;align-items:center;gap:5px"><span style="width:10px;height:10px;background:#b5cade"></span>Chờ</span>
+                    <span style="display:flex;align-items:center;gap:5px"><span style="width:10px;height:10px;background:#d4d4d7"></span>Dừng</span>
+                    <span style="display:flex;align-items:center;gap:5px"><span style="width:10px;height:10px;background:#b4552d"></span>Lỗi</span>
+                  </div>
+                </div>
+                <div style="padding:12px 13px;border-bottom:1px solid var(--color-divider)">
+                  <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+                    <div style="font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#6d6f71">{{ sel.chartLabel }}</div>
+                    <span style="margin-left:auto;font-size:11.5px;color:#76797b">9 giờ gần nhất</span>
+                  </div>
+                  <svg viewBox="0 0 360 120" style="width:100%;height:120px;display:block">
+                    <g stroke="#e8e9ea"><line x1="0" y1="30" x2="360" y2="30"></line><line x1="0" y1="60" x2="360" y2="60"></line><line x1="0" y1="90" x2="360" y2="90"></line></g>
+                    <polyline points="{{ sel.spark }}" fill="none" stroke="#5980a6" strokeWidth="1.8"></polyline>
+                  </svg>
+                </div>
+                <div style="padding:12px 13px">
+                  <div style="font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#6d6f71;margin-bottom:7px">Lịch sử dữ liệu gần nhất</div>
+                  <sc-for list="{{ sel.log }}" as="l" hint-placeholder-count="4">
+                    <div style="display:flex;gap:10px;padding:6px 0;border-bottom:1px solid rgba(29,31,32,.07);font-size:12.5px">
+                      <span style="color:#76797b;flex:none;width:52px">{{ l.t }}</span>
+                      <span style="flex:1">{{ l.e }}</span>
+                      <span style="color:#5d5d60">{{ l.v }}</span>
+                    </div>
+                  </sc-for>
+                  <div style="display:flex;gap:8px;margin-top:11px">
+                    <button class="btn btn-primary" style="flex:1">Mở hồ sơ thiết bị</button>
+                    <button class="btn btn-secondary">Lịch sử phiên</button>
+                  </div>
+                </div>
+              </div>
+            </sc-if>
+            <sc-if value="{{ noSel }}" hint-placeholder-val="{{ false }}">
+              <div style="padding:40px 24px;text-align:center;color:#76797b;font-size:13px">Chọn một thiết bị trong danh sách để xem chi tiết vận hành.</div>
+            </sc-if>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isOp }}" hint-placeholder-val="{{ false }}">
+        <div class="oee-kpi4" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid var(--color-divider);background:#fff">
+          <div class="kpi" style="border-right:1px solid var(--color-divider)">
+            <div class="kpi-l">Phiên trong ca</div><div class="kpi-v">12</div><div class="kpi-s">04 đang mở · 08 đã đóng</div>
+          </div>
+          <div class="kpi" style="border-right:1px solid var(--color-divider)">
+            <div class="kpi-l">Chờ xác nhận</div><div class="kpi-v" style="color:#8c3b1e">03</div><div class="kpi-s">Quá hạn 24h: 01</div>
+          </div>
+          <div class="kpi" style="border-right:1px solid var(--color-divider)">
+            <div class="kpi-l">Sai lệch giờ chạy máy</div><div class="kpi-v">3,2<span style="font-size:17px">%</span></div><div class="kpi-s">Ngưỡng POC ≤ 5%</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi-l">OLE trung bình</div><div class="kpi-v">68,1<span style="font-size:17px">%</span></div><div class="kpi-s">12 thợ có phiên trong kỳ</div>
+          </div>
+        </div>
+
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--color-divider);background:#fff">
+          <div class="seg2">
+            <button data-on="1">Tất cả</button><button>Chờ xác nhận</button><button>Đã xác nhận</button><button>Lệch &gt; 5%</button>
+          </div>
+          <select class="input" style="width:190px;height:34px"><option>Tất cả người vận hành</option><option>Trần Quốc Minh</option><option>Lê Hoàng Nam</option><option>Phạm Văn Đức</option></select>
+          <select class="input" style="width:175px;height:34px"><option>Tất cả thiết bị</option><option>WLD-A-0142</option><option>WLD-B-0217</option><option>TRC-01-7742</option></select>
+          <input class="input" style="width:150px;height:34px;background:#fff" value="11/09/2026">
+          <button class="btn btn-primary" style="margin-left:auto">Xác nhận hàng loạt</button>
+          <button class="btn btn-secondary">Xuất đối soát</button>
+        </div>
+
+        <div class="oee-split">
+          <div style="border:1px solid var(--color-divider);background:#fff">
+            <div style="display:flex;align-items:center;gap:10px;padding:10px 13px;border-bottom:1px solid var(--color-divider)">
+              <h5 style="margin:0;font-size:15px">Phiên sử dụng thiết bị</h5>
+              <span style="font-size:12px;color:#76797b">Check-in/out bằng QR Code · đối soát IoT với số liệu thợ nhập</span>
+            </div>
+            <div class="oee-scroll"><table style="width:100%;min-width:900px;border-collapse:collapse">
+              <thead><tr>
+                <th class="oee-th">Mã phiên</th><th class="oee-th">Người vận hành</th><th class="oee-th">Thiết bị</th>
+                <th class="oee-th">Bắt đầu</th><th class="oee-th">Kết thúc</th>
+                <th class="oee-th" style="text-align:right">Hệ thống</th><th class="oee-th" style="text-align:right">Thợ nhập</th>
+                <th class="oee-th" style="text-align:right">Lệch</th><th class="oee-th">Trạng thái</th>
+              </tr></thead>
+              <tbody>
+                <sc-for list="{{ sessions }}" as="s" hint-placeholder-count="8">
+                  <tr class="oee-row" onClick="{{ s.pick }}" data-on="{{ s.on }}">
+                    <td class="oee-td">{{ s.id }}</td>
+                    <td class="oee-td"><div>{{ s.op }}</div><div style="font-size:11.5px;color:#76797b">{{ s.role }}</div></td>
+                    <td class="oee-td" style="color:#5d5d60">{{ s.dev }}</td>
+                    <td class="oee-td">{{ s.in }}</td>
+                    <td class="oee-td">{{ s.out }}</td>
+                    <td class="oee-td" style="text-align:right;font-variant-numeric:tabular-nums">{{ s.sys }}</td>
+                    <td class="oee-td" style="text-align:right;font-variant-numeric:tabular-nums">{{ s.man }}</td>
+                    <td class="oee-td" style="text-align:right;font-variant-numeric:tabular-nums">
+                      <span style="{{ s.devStyle }}">{{ s.dev2 }}</span></td>
+                    <td class="oee-td"><span class="tag" style="{{ s.badge }}">{{ s.state }}</span></td>
+                  </tr>
+                </sc-for>
+              </tbody>
+            </table></div>
+          </div>
+
+          <div style="border:1px solid var(--color-divider);background:#fff;position:sticky;top:112px">
+            <div style="padding:12px 13px;border-bottom:1px solid var(--color-divider)">
+              <div style="font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#6d6f71">Đối soát phiên</div>
+              <div style="font-family:var(--font-heading);font-size:20px;line-height:1.2;margin-top:2px">{{ ses.id }} · {{ ses.op }}</div>
+              <div style="font-size:12px;color:#6d6f71">{{ ses.dev }} · {{ ses.in }} → {{ ses.out }}</div>
+              <div style="margin-top:8px"><span class="tag" style="{{ ses.badge }}">{{ ses.state }}</span></div>
+            </div>
+            <div style="padding:12px 13px;border-bottom:1px solid var(--color-divider)">
+              <div style="font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#6d6f71;margin-bottom:8px">So sánh dữ liệu</div>
+              <table style="width:100%;border-collapse:collapse;font-size:13px">
+                <thead><tr><th class="oee-th" style="padding:5px 0">Chỉ tiêu</th><th class="oee-th" style="padding:5px 0;text-align:right">IoT</th><th class="oee-th" style="padding:5px 0;text-align:right">Thợ nhập</th><th class="oee-th" style="padding:5px 0;text-align:right">Lệch</th></tr></thead>
+                <tbody>
+                  <sc-for list="{{ ses.rows }}" as="r" hint-placeholder-count="4">
+                    <tr><td style="padding:7px 0;border-bottom:1px solid rgba(29,31,32,.07)">{{ r.k }}</td>
+                      <td style="padding:7px 0;text-align:right;border-bottom:1px solid rgba(29,31,32,.07);font-variant-numeric:tabular-nums">{{ r.a }}</td>
+                      <td style="padding:7px 0;text-align:right;border-bottom:1px solid rgba(29,31,32,.07);font-variant-numeric:tabular-nums">{{ r.b }}</td>
+                      <td style="padding:7px 0;text-align:right;border-bottom:1px solid rgba(29,31,32,.07)"><span style="{{ r.dStyle }}">{{ r.d }}</span></td></tr>
+                  </sc-for>
+                </tbody>
+              </table>
+            </div>
+            <div style="padding:12px 13px;border-bottom:1px solid var(--color-divider)">
+              <div style="font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#6d6f71;margin-bottom:7px">Khai báo của người vận hành</div>
+              <div style="display:grid;grid-template-columns:auto 1fr;gap:6px 12px;font-size:12.5px">
+                <span style="color:#6d6f71">Sản lượng</span><span>{{ ses.output }}</span>
+                <span style="color:#6d6f71">Nguyên nhân dừng</span><span>{{ ses.reason }}</span>
+                <span style="color:#6d6f71">Ghi chú</span><span>{{ ses.note }}</span>
+                <span style="color:#6d6f71">Ảnh đính kèm</span><span>{{ ses.photo }}</span>
+              </div>
+            </div>
+            <div style="padding:12px 13px">
+              <div class="field" style="margin-bottom:9px">
+                <label>Ý kiến đối soát của điều độ</label>
+                <textarea class="input" style="min-height:64px;background:#fff" placeholder="Ghi nhận nguyên nhân sai lệch, hướng xử lý…"></textarea>
+              </div>
+              <div style="display:flex;gap:8px">
+                <button class="btn btn-primary" style="flex:1">Xác nhận dữ liệu</button>
+                <button class="btn btn-secondary">Yêu cầu nhập lại</button>
+              </div>
+              <div style="margin-top:10px;font-size:11.5px;color:#76797b;line-height:1.5">
+                Phiên không được xác nhận trong 24 giờ sẽ tự động chuyển trạng thái và được lưu vết phục vụ đối soát.
+              </div>
+            </div>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isOee }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--color-divider);background:#fff">
+          <div class="seg2"><button>Ca</button><button data-on="1">Ngày</button><button>Tuần</button><button>Tháng</button></div>
+          <select class="input" style="width:190px;height:34px"><option>Tất cả nhóm thiết bị</option><option>Máy hàn</option><option>Máy nén khí</option><option>Xe tải cẩu</option></select>
+          <select class="input" style="width:190px;height:34px"><option>Tất cả người vận hành</option></select>
+          <select class="input" style="width:175px;height:34px"><option>Tất cả dự án</option></select>
+          <span style="margin-left:auto;font-size:12px;color:#76797b">Kỳ: 05/09 – 11/09/2026</span>
+        </div>
+
+        <div class="oee-kpi4" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px">
+          <div style="padding:13px;border:1px solid var(--color-divider);background:#fff">
+            <div class="kpi-l" style="min-height:0">OEE trung bình</div><div class="kpi-v">72,6%</div>
+            <div class="kpi-s">▲ 3,1 đ% so với kỳ trước</div>
+          </div>
+          <div style="padding:13px;border:1px solid var(--color-divider);background:#fff">
+            <div class="kpi-l" style="min-height:0">Khả dụng (A)</div><div class="kpi-v">84,2%</div>
+            <div class="kpi-s">Thời gian dừng 8h 40p / kỳ</div>
+          </div>
+          <div style="padding:13px;border:1px solid var(--color-divider);background:#fff">
+            <div class="kpi-l" style="min-height:0">Hiệu suất (P)</div><div class="kpi-v">91,5%</div>
+            <div class="kpi-s">So với nhịp chuẩn theo nhóm</div>
+          </div>
+          <div style="padding:13px;border:1px solid var(--color-divider);background:#fff">
+            <div class="kpi-l" style="min-height:0">Chất lượng (Q)</div><div class="kpi-v">94,3%</div>
+            <div class="kpi-s">Sản lượng đạt / tổng khai báo</div>
+          </div>
+        </div>
+
+        <div class="oee-charts" style="display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:12px">
+          <div style="border:1px solid var(--color-divider);background:#fff">
+            <div style="padding:10px 13px;border-bottom:1px solid var(--color-divider);display:flex;align-items:center;gap:10px">
+              <h5 style="margin:0;font-size:15px">OEE và OLE theo ngày</h5>
+              <div style="margin-left:auto;display:flex;gap:12px;font-size:11.5px;color:#5d5d60">
+                <span style="display:flex;align-items:center;gap:5px"><span style="width:14px;height:2px;background:#5980a6"></span>OEE</span>
+                <span style="display:flex;align-items:center;gap:5px"><span style="width:14px;height:2px;background:#b7b7ba"></span>OLE</span>
+              </div>
+            </div>
+            <svg viewBox="0 0 620 230" style="width:100%;height:236px;display:block">
+              <g stroke="#e8e9ea"><line x1="46" y1="30" x2="600" y2="30"></line><line x1="46" y1="70" x2="600" y2="70"></line><line x1="46" y1="110" x2="600" y2="110"></line><line x1="46" y1="150" x2="600" y2="150"></line><line x1="46" y1="190" x2="600" y2="190"></line></g>
+              <g fontSize="10.5" fill="#8a8d90"><text x="14" y="34">100</text><text x="20" y="74">85</text><text x="20" y="114">70</text><text x="20" y="154">55</text><text x="20" y="194">40</text></g>
+              <polyline points="80,122 167,114 254,130 341,106 428,98 515,102 580,94" fill="none" stroke="#5980a6" strokeWidth="2.2"></polyline>
+              <polyline points="80,138 167,134 254,146 341,128 428,122 515,136 580,130" fill="none" stroke="#b7b7ba" strokeWidth="2" strokeDasharray="5 4"></polyline>
+              <g fontSize="10.5" fill="#8a8d90" textAnchor="middle"><text x="80" y="212">05/09</text><text x="167" y="212">06/09</text><text x="254" y="212">07/09</text><text x="341" y="212">08/09</text><text x="428" y="212">09/09</text><text x="515" y="212">10/09</text><text x="580" y="212">11/09</text></g>
+            </svg>
+          </div>
+          <div style="border:1px solid var(--color-divider);background:#fff">
+            <div style="padding:10px 13px;border-bottom:1px solid var(--color-divider)"><h5 style="margin:0;font-size:15px">So sánh OEE giữa các thiết bị</h5></div>
+            <svg viewBox="0 0 400 236" style="width:100%;height:236px;display:block">
+              <g fontSize="11" fill="#5d5d60">
+                <text x="10" y="34">WLD-A-0142</text><text x="10" y="70">WLD-B-0217</text><text x="10" y="106">CMP-A-0331</text>
+                <text x="10" y="142">CMP-B-0348</text><text x="10" y="178">TRC-01-7742</text><text x="10" y="214">TRC-02-7815</text>
+              </g>
+              <g fill="#e4e4e6"><rect x="104" y="20" width="250" height="18"></rect><rect x="104" y="56" width="250" height="18"></rect><rect x="104" y="92" width="250" height="18"></rect><rect x="104" y="128" width="250" height="18"></rect><rect x="104" y="164" width="250" height="18"></rect><rect x="104" y="200" width="250" height="18"></rect></g>
+              <g fill="#5980a6"><rect x="104" y="20" width="196" height="18"></rect><rect x="104" y="56" width="137" height="18"></rect><rect x="104" y="92" width="203" height="18"></rect><rect x="104" y="128" width="116" height="18"></rect><rect x="104" y="164" width="174" height="18"></rect></g>
+              <rect x="104" y="200" width="64" height="18" fill="#c3c8cd"></rect>
+              <g fontSize="11" fill="#1d1f20"><text x="308" y="34">78,4%</text><text x="308" y="70">54,7%</text><text x="315" y="106">81,2%</text><text x="308" y="142">46,3%</text><text x="308" y="178">69,5%</text><text x="308" y="214">n/a</text></g>
+              <line x1="285" y1="14" x2="285" y2="224" stroke="#8c3b1e" strokeDasharray="4 3"></line>
+              <text x="288" y="12" fontSize="10" fill="#8c3b1e">Mục tiêu 72%</text>
+            </svg>
+          </div>
+        </div>
+
+        <div style="border:1px solid var(--color-divider);background:#fff">
+          <div style="padding:10px 13px;border-bottom:1px solid var(--color-divider);display:flex;align-items:center;gap:10px">
+            <h5 style="margin:0;font-size:15px">OEE theo thiết bị</h5>
+            <button class="btn btn-secondary" style="margin-left:auto;height:30px;font-size:12.5px">Xuất Excel</button>
+          </div>
+          <div class="oee-scroll"><table style="width:100%;min-width:840px;border-collapse:collapse">
+            <thead><tr>
+              <th class="oee-th">Thiết bị</th><th class="oee-th">Nhóm</th>
+              <th class="oee-th" style="text-align:right">Thời gian khả dụng</th><th class="oee-th" style="text-align:right">Thời gian chạy</th>
+              <th class="oee-th" style="text-align:right">Thời gian dừng</th>
+              <th class="oee-th" style="text-align:right">A</th><th class="oee-th" style="text-align:right">P</th><th class="oee-th" style="text-align:right">Q</th>
+              <th class="oee-th" style="text-align:right">OEE</th>
+            </tr></thead>
+            <tbody>
+              <tr><td class="oee-td">WLD-A-0142</td><td class="oee-td" style="color:#5d5d60">Máy hàn</td><td class="oee-td" style="text-align:right">56,0 h</td><td class="oee-td" style="text-align:right">48,3 h</td><td class="oee-td" style="text-align:right">7,7 h</td><td class="oee-td" style="text-align:right">86,3%</td><td class="oee-td" style="text-align:right">93,1%</td><td class="oee-td" style="text-align:right">97,6%</td><td class="oee-td" style="text-align:right;font-weight:600">78,4%</td></tr>
+              <tr><td class="oee-td">WLD-B-0217</td><td class="oee-td" style="color:#5d5d60">Máy hàn</td><td class="oee-td" style="text-align:right">56,0 h</td><td class="oee-td" style="text-align:right">36,4 h</td><td class="oee-td" style="text-align:right">19,6 h</td><td class="oee-td" style="text-align:right">65,0%</td><td class="oee-td" style="text-align:right">88,2%</td><td class="oee-td" style="text-align:right">95,4%</td><td class="oee-td" style="text-align:right;font-weight:600;color:#8c3b1e">54,7%</td></tr>
+              <tr><td class="oee-td">CMP-A-0331</td><td class="oee-td" style="color:#5d5d60">Máy nén khí</td><td class="oee-td" style="text-align:right">84,0 h</td><td class="oee-td" style="text-align:right">76,1 h</td><td class="oee-td" style="text-align:right">7,9 h</td><td class="oee-td" style="text-align:right">90,6%</td><td class="oee-td" style="text-align:right">94,0%</td><td class="oee-td" style="text-align:right">95,3%</td><td class="oee-td" style="text-align:right;font-weight:600">81,2%</td></tr>
+              <tr><td class="oee-td">CMP-B-0348</td><td class="oee-td" style="color:#5d5d60">Máy nén khí</td><td class="oee-td" style="text-align:right">84,0 h</td><td class="oee-td" style="text-align:right">48,2 h</td><td class="oee-td" style="text-align:right">35,8 h</td><td class="oee-td" style="text-align:right">57,4%</td><td class="oee-td" style="text-align:right">86,5%</td><td class="oee-td" style="text-align:right">93,2%</td><td class="oee-td" style="text-align:right;font-weight:600;color:#8c3b1e">46,3%</td></tr>
+              <tr><td class="oee-td">TRC-01-7742</td><td class="oee-td" style="color:#5d5d60">Xe tải cẩu</td><td class="oee-td" style="text-align:right">56,0 h</td><td class="oee-td" style="text-align:right">42,9 h</td><td class="oee-td" style="text-align:right">13,1 h</td><td class="oee-td" style="text-align:right">76,6%</td><td class="oee-td" style="text-align:right">92,4%</td><td class="oee-td" style="text-align:right">98,2%</td><td class="oee-td" style="text-align:right;font-weight:600">69,5%</td></tr>
+              <tr><td class="oee-td">TRC-02-7815</td><td class="oee-td" style="color:#5d5d60">Xe tải cẩu</td><td class="oee-td" style="text-align:right">56,0 h</td><td class="oee-td" style="text-align:right">—</td><td class="oee-td" style="text-align:right">—</td><td class="oee-td" style="text-align:right">—</td><td class="oee-td" style="text-align:right">—</td><td class="oee-td" style="text-align:right">—</td><td class="oee-td" style="text-align:right;color:#76797b">Thiếu dữ liệu</td></tr>
+            </tbody>
+          </table></div>
+        </div>
+
+        <div style="border:1px solid var(--color-divider);background:#fff">
+          <div style="padding:10px 13px;border-bottom:1px solid var(--color-divider)"><h5 style="margin:0;font-size:15px">OLE theo người vận hành</h5></div>
+          <div class="oee-scroll"><table style="width:100%;min-width:760px;border-collapse:collapse">
+            <thead><tr>
+              <th class="oee-th">Người vận hành</th><th class="oee-th">Vai trò</th><th class="oee-th">Số phiên</th>
+              <th class="oee-th" style="text-align:right">Giờ có mặt</th><th class="oee-th" style="text-align:right">Giờ vận hành</th>
+              <th class="oee-th" style="text-align:right">Giờ tạo giá trị</th><th class="oee-th" style="text-align:right">OLE</th>
+            </tr></thead>
+            <tbody>
+              <tr><td class="oee-td">Trần Quốc Minh</td><td class="oee-td" style="color:#5d5d60">Thợ hàn bậc 5</td><td class="oee-td">7</td><td class="oee-td" style="text-align:right">56,0 h</td><td class="oee-td" style="text-align:right">48,3 h</td><td class="oee-td" style="text-align:right">40,1 h</td><td class="oee-td" style="text-align:right;font-weight:600">71,6%</td></tr>
+              <tr><td class="oee-td">Lê Hoàng Nam</td><td class="oee-td" style="color:#5d5d60">Thợ hàn bậc 4</td><td class="oee-td">7</td><td class="oee-td" style="text-align:right">56,0 h</td><td class="oee-td" style="text-align:right">36,4 h</td><td class="oee-td" style="text-align:right">28,7 h</td><td class="oee-td" style="text-align:right;font-weight:600;color:#8c3b1e">51,3%</td></tr>
+              <tr><td class="oee-td">Phạm Văn Đức</td><td class="oee-td" style="color:#5d5d60">Lái xe cẩu</td><td class="oee-td">6</td><td class="oee-td" style="text-align:right">48,0 h</td><td class="oee-td" style="text-align:right">42,9 h</td><td class="oee-td" style="text-align:right">34,2 h</td><td class="oee-td" style="text-align:right;font-weight:600">71,3%</td></tr>
+              <tr><td class="oee-td">Nguyễn Bá Tuấn</td><td class="oee-td" style="color:#5d5d60">Lái xe cẩu</td><td class="oee-td">5</td><td class="oee-td" style="text-align:right">40,0 h</td><td class="oee-td" style="text-align:right">26,4 h</td><td class="oee-td" style="text-align:right">19,8 h</td><td class="oee-td" style="text-align:right;font-weight:600">49,5%</td></tr>
+              <tr><td class="oee-td">Võ Thanh Sơn</td><td class="oee-td" style="color:#5d5d60">Thợ vận hành</td><td class="oee-td">6</td><td class="oee-td" style="text-align:right">48,0 h</td><td class="oee-td" style="text-align:right">44,6 h</td><td class="oee-td" style="text-align:right">37,9 h</td><td class="oee-td" style="text-align:right;font-weight:600">79,0%</td></tr>
+            </tbody>
+          </table></div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isKpi }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--color-divider);background:#fff">
+          <span style="font-size:12.5px;color:#5d5d60">Bộ chỉ tiêu nghiệm thu POC · kỳ đánh giá 01/09 – 30/11/2026</span>
+          <div class="seg2" style="margin-left:auto"><button data-on="1">Tất cả</button><button>Đạt</button><button>Chưa đạt</button><button>Chờ xác nhận tiêu chí</button></div>
+        </div>
+
+        <div class="oee-kpi4" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid var(--color-divider);background:#fff">
+          <div class="kpi" style="border-right:1px solid var(--color-divider)"><div class="kpi-l">Tổng chỉ tiêu</div><div class="kpi-v">08</div><div class="kpi-s">Theo user story POC</div></div>
+          <div class="kpi" style="border-right:1px solid var(--color-divider)"><div class="kpi-l">Đạt</div><div class="kpi-v" style="color:#2f6b46">05</div><div class="kpi-s">Đo liên tục 14 ngày</div></div>
+          <div class="kpi" style="border-right:1px solid var(--color-divider)"><div class="kpi-l">Chưa đạt</div><div class="kpi-v" style="color:#8c3b1e">01</div><div class="kpi-s">Tỷ lệ xác nhận đúng hạn</div></div>
+          <div class="kpi"><div class="kpi-l">Chờ thống nhất tiêu chí</div><div class="kpi-v">02</div><div class="kpi-s">Cần xác nhận trước nghiệm thu</div></div>
+        </div>
+
+        <div style="border:1px solid var(--color-divider);background:#fff">
+          <div style="padding:10px 13px;border-bottom:1px solid var(--color-divider)"><h5 style="margin:0;font-size:15px">Chỉ tiêu KPI POC</h5></div>
+          <div class="oee-scroll"><table style="width:100%;min-width:900px;border-collapse:collapse">
+            <thead><tr>
+              <th class="oee-th">Mã</th><th class="oee-th">Chỉ tiêu</th><th class="oee-th">Mục tiêu</th>
+              <th class="oee-th">Thực tế</th><th class="oee-th" style="width:170px">Tiến độ</th><th class="oee-th">Nguồn đo</th><th class="oee-th">Trạng thái</th>
+            </tr></thead>
+            <tbody>
+              <tr><td class="oee-td">KPI-01</td><td class="oee-td">Thời gian nhận diện QR Code</td><td class="oee-td">≤ 2 giây</td><td class="oee-td">1,3 giây</td>
+                <td class="oee-td"><div style="height:7px;background:#e4e4e6"><div style="width:100%;height:100%;background:#5980a6"></div></div></td>
+                <td class="oee-td" style="color:#5d5d60">App di động</td><td class="oee-td"><span class="tag" style="background:#e0ebe3;color:#255a3a">Đạt</span></td></tr>
+              <tr><td class="oee-td">KPI-02</td><td class="oee-td">Thời gian check-in / check-out phiên</td><td class="oee-td">≤ 15 giây</td><td class="oee-td">9,4 giây</td>
+                <td class="oee-td"><div style="height:7px;background:#e4e4e6"><div style="width:100%;height:100%;background:#5980a6"></div></div></td>
+                <td class="oee-td" style="color:#5d5d60">App di động</td><td class="oee-td"><span class="tag" style="background:#e0ebe3;color:#255a3a">Đạt</span></td></tr>
+              <tr><td class="oee-td">KPI-03</td><td class="oee-td">Tỷ lệ thu thập dữ liệu thành công</td><td class="oee-td">≥ 95%</td><td class="oee-td">97,3%</td>
+                <td class="oee-td"><div style="height:7px;background:#e4e4e6"><div style="width:97%;height:100%;background:#5980a6"></div></div></td>
+                <td class="oee-td" style="color:#5d5d60">Nền tảng IoT</td><td class="oee-td"><span class="tag" style="background:#e0ebe3;color:#255a3a">Đạt</span></td></tr>
+              <tr><td class="oee-td">KPI-04</td><td class="oee-td">Độ trễ hiển thị dữ liệu (p95)</td><td class="oee-td">≤ 60 giây</td><td class="oee-td">18 giây</td>
+                <td class="oee-td"><div style="height:7px;background:#e4e4e6"><div style="width:100%;height:100%;background:#5980a6"></div></div></td>
+                <td class="oee-td" style="color:#5d5d60">Nền tảng IoT</td><td class="oee-td"><span class="tag" style="background:#e0ebe3;color:#255a3a">Đạt</span></td></tr>
+              <tr><td class="oee-td">KPI-05</td><td class="oee-td">Sai lệch giờ chạy máy so với ghi chép thủ công</td><td class="oee-td">≤ 5%</td><td class="oee-td">3,2%</td>
+                <td class="oee-td"><div style="height:7px;background:#e4e4e6"><div style="width:64%;height:100%;background:#5980a6"></div></div></td>
+                <td class="oee-td" style="color:#5d5d60">Đối soát phiên</td><td class="oee-td"><span class="tag" style="background:#e0ebe3;color:#255a3a">Đạt</span></td></tr>
+              <tr><td class="oee-td">KPI-06</td><td class="oee-td">Tỷ lệ phiên được xác nhận trong 24 giờ</td><td class="oee-td">≥ 90%</td><td class="oee-td">81,5%</td>
+                <td class="oee-td"><div style="height:7px;background:#e4e4e6"><div style="width:81%;height:100%;background:#b4552d"></div></div></td>
+                <td class="oee-td" style="color:#5d5d60">Đối soát phiên</td><td class="oee-td"><span class="tag" style="background:#f1ded6;color:#7d3418">Chưa đạt</span></td></tr>
+              <tr><td class="oee-td">KPI-07</td><td class="oee-td">Mức độ hữu ích theo khảo sát bộ phận quản lý</td><td class="oee-td">≥ 70%</td><td class="oee-td">Chưa khảo sát</td>
+                <td class="oee-td"><div style="height:7px;background:#e4e4e6"></div></td>
+                <td class="oee-td" style="color:#5d5d60">Khảo sát cuối kỳ</td><td class="oee-td"><span class="tag tag-neutral">Chưa đến kỳ</span></td></tr>
+              <tr><td class="oee-td">KPI-08</td><td class="oee-td">Tiêu chí tem QR: vật liệu, khoảng cách quét, chịu bụi</td><td class="oee-td">Cần thống nhất</td><td class="oee-td">—</td>
+                <td class="oee-td"><div style="height:7px;background:#e4e4e6"></div></td>
+                <td class="oee-td" style="color:#5d5d60">Biên bản kỹ thuật</td><td class="oee-td"><span class="tag" style="background:#eee6d4;color:#6a4f13">Chờ xác nhận</span></td></tr>
+            </tbody>
+          </table></div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isChart }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--color-divider);background:#fff">
+          <div class="seg2"><button data-on="1">OEE</button><button>OLE</button><button>Giờ chạy máy</button><button>Thời gian dừng</button><button>Điện năng</button></div>
+          <select class="input" style="width:190px;height:34px"><option>Tất cả thiết bị</option><option>WLD-A-0142</option></select>
+          <input class="input" style="width:210px;height:34px;background:#fff" value="05/09/2026 – 11/09/2026">
+          <button class="btn btn-secondary" style="margin-left:auto">Lưu bộ lọc</button>
+          <button class="btn btn-primary">Cập nhật biểu đồ</button>
+        </div>
+
+        <div style="border:1px solid var(--color-divider);background:#fff">
+          <div style="padding:10px 13px;border-bottom:1px solid var(--color-divider);display:flex;align-items:center;gap:10px">
+            <h5 style="margin:0;font-size:15px">OEE theo thời gian — 6 thiết bị POC</h5>
+            <span style="margin-left:auto;font-size:11.5px;color:#76797b">Nhấp vào đường để tách thiết bị</span>
+          </div>
+          <svg viewBox="0 0 900 300" style="width:100%;height:300px;display:block">
+            <g stroke="#eceded"><line x1="60" y1="40" x2="870" y2="40"></line><line x1="60" y1="90" x2="870" y2="90"></line><line x1="60" y1="140" x2="870" y2="140"></line><line x1="60" y1="190" x2="870" y2="190"></line><line x1="60" y1="240" x2="870" y2="240"></line></g>
+            <g fontSize="11" fill="#8a8d90"><text x="26" y="44">100</text><text x="34" y="94">85</text><text x="34" y="144">70</text><text x="34" y="194">55</text><text x="34" y="244">40</text></g>
+            <polyline points="120,150 245,138 370,160 495,128 620,118 745,124 860,112" fill="none" stroke="#5980a6" strokeWidth="2.2"></polyline>
+            <polyline points="120,206 245,214 370,198 495,222 620,210 745,228 860,216" fill="none" stroke="#8ba9c6" strokeWidth="2"></polyline>
+            <polyline points="120,128 245,120 370,132 495,116 620,110 745,118 860,106" fill="none" stroke="#2c455d" strokeWidth="2"></polyline>
+            <polyline points="120,232 245,240 370,228 495,246 620,236 745,250 860,238" fill="none" stroke="#b4552d" strokeWidth="2"></polyline>
+            <polyline points="120,172 245,166 370,180 495,158 620,150 745,162 860,146" fill="none" stroke="#6d8f7c" strokeWidth="2"></polyline>
+            <polyline points="120,190 245,196 370,204 495,210 620,214 745,220 860,226" fill="none" stroke="#b7b7ba" strokeWidth="2" strokeDasharray="5 4"></polyline>
+            <g fontSize="11" fill="#8a8d90" textAnchor="middle"><text x="120" y="266">05/09</text><text x="245" y="266">06/09</text><text x="370" y="266">07/09</text><text x="495" y="266">08/09</text><text x="620" y="266">09/09</text><text x="745" y="266">10/09</text><text x="860" y="266">11/09</text></g>
+          </svg>
+          <div style="display:flex;flex-wrap:wrap;gap:16px;padding:0 13px 13px;font-size:11.5px;color:#5d5d60">
+            <span style="display:flex;align-items:center;gap:6px"><span style="width:14px;height:2px;background:#5980a6"></span>WLD-A-0142</span>
+            <span style="display:flex;align-items:center;gap:6px"><span style="width:14px;height:2px;background:#8ba9c6"></span>WLD-B-0217</span>
+            <span style="display:flex;align-items:center;gap:6px"><span style="width:14px;height:2px;background:#2c455d"></span>CMP-A-0331</span>
+            <span style="display:flex;align-items:center;gap:6px"><span style="width:14px;height:2px;background:#b4552d"></span>CMP-B-0348</span>
+            <span style="display:flex;align-items:center;gap:6px"><span style="width:14px;height:2px;background:#6d8f7c"></span>TRC-01-7742</span>
+            <span style="display:flex;align-items:center;gap:6px"><span style="width:14px;height:2px;background:#b7b7ba"></span>TRC-02-7815</span>
+          </div>
+        </div>
+
+        <div class="oee-charts" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px">
+          <div style="border:1px solid var(--color-divider);background:#fff">
+            <div style="padding:10px 13px;border-bottom:1px solid var(--color-divider)"><h5 style="margin:0;font-size:15px">Giờ vận hành theo ca</h5></div>
+            <svg viewBox="0 0 440 220" style="width:100%;height:220px;display:block">
+              <g stroke="#eceded"><line x1="40" y1="30" x2="420" y2="30"></line><line x1="40" y1="80" x2="420" y2="80"></line><line x1="40" y1="130" x2="420" y2="130"></line><line x1="40" y1="180" x2="420" y2="180"></line></g>
+              <g fill="#5980a6"><rect x="66" y="72" width="26" height="108"></rect><rect x="126" y="56" width="26" height="124"></rect><rect x="186" y="88" width="26" height="92"></rect><rect x="246" y="62" width="26" height="118"></rect><rect x="306" y="50" width="26" height="130"></rect><rect x="366" y="96" width="26" height="84"></rect></g>
+              <g fill="#b5cade"><rect x="94" y="120" width="26" height="60"></rect><rect x="154" y="112" width="26" height="68"></rect><rect x="214" y="134" width="26" height="46"></rect><rect x="274" y="118" width="26" height="62"></rect><rect x="334" y="108" width="26" height="72"></rect><rect x="394" y="142" width="26" height="38"></rect></g>
+              <g fontSize="11" fill="#8a8d90" textAnchor="middle"><text x="93" y="198">05/09</text><text x="153" y="198">06/09</text><text x="213" y="198">07/09</text><text x="273" y="198">08/09</text><text x="333" y="198">09/09</text><text x="393" y="198">10/09</text></g>
+              <g fontSize="11" fill="#5d5d60"><text x="66" y="214">■ Ca 1</text><text x="140" y="214" fill="#8a8d90">■ Ca 2</text></g>
+            </svg>
+          </div>
+          <div style="border:1px solid var(--color-divider);background:#fff">
+            <div style="padding:10px 13px;border-bottom:1px solid var(--color-divider)"><h5 style="margin:0;font-size:15px">Mật độ hoạt động theo giờ</h5></div>
+            <svg viewBox="0 0 440 220" style="width:100%;height:220px;display:block">
+              <g fontSize="10.5" fill="#8a8d90"><text x="8" y="42">T2</text><text x="8" y="70">T3</text><text x="8" y="98">T4</text><text x="8" y="126">T5</text><text x="8" y="154">T6</text><text x="8" y="182">T7</text></g>
+              <g fontSize="10" fill="#8a8d90" textAnchor="middle"><text x="52" y="22">6h</text><text x="132" y="22">9h</text><text x="212" y="22">12h</text><text x="292" y="22">15h</text><text x="372" y="22">18h</text></g>
+              <g>
+                <rect x="36" y="30" width="26" height="22" fill="#dbe5ee"></rect><rect x="66" y="30" width="26" height="22" fill="#a9c1d7"></rect><rect x="96" y="30" width="26" height="22" fill="#7d9fc0"></rect><rect x="126" y="30" width="26" height="22" fill="#5980a6"></rect><rect x="156" y="30" width="26" height="22" fill="#5980a6"></rect><rect x="186" y="30" width="26" height="22" fill="#a9c1d7"></rect><rect x="216" y="30" width="26" height="22" fill="#7d9fc0"></rect><rect x="246" y="30" width="26" height="22" fill="#5980a6"></rect><rect x="276" y="30" width="26" height="22" fill="#7d9fc0"></rect><rect x="306" y="30" width="26" height="22" fill="#dbe5ee"></rect><rect x="336" y="30" width="26" height="22" fill="#eef3f8"></rect><rect x="366" y="30" width="26" height="22" fill="#eef3f8"></rect>
+                <rect x="36" y="58" width="26" height="22" fill="#dbe5ee"></rect><rect x="66" y="58" width="26" height="22" fill="#7d9fc0"></rect><rect x="96" y="58" width="26" height="22" fill="#5980a6"></rect><rect x="126" y="58" width="26" height="22" fill="#41617f"></rect><rect x="156" y="58" width="26" height="22" fill="#5980a6"></rect><rect x="186" y="58" width="26" height="22" fill="#7d9fc0"></rect><rect x="216" y="58" width="26" height="22" fill="#5980a6"></rect><rect x="246" y="58" width="26" height="22" fill="#5980a6"></rect><rect x="276" y="58" width="26" height="22" fill="#a9c1d7"></rect><rect x="306" y="58" width="26" height="22" fill="#dbe5ee"></rect><rect x="336" y="58" width="26" height="22" fill="#eef3f8"></rect><rect x="366" y="58" width="26" height="22" fill="#eef3f8"></rect>
+                <rect x="36" y="86" width="26" height="22" fill="#eef3f8"></rect><rect x="66" y="86" width="26" height="22" fill="#a9c1d7"></rect><rect x="96" y="86" width="26" height="22" fill="#7d9fc0"></rect><rect x="126" y="86" width="26" height="22" fill="#5980a6"></rect><rect x="156" y="86" width="26" height="22" fill="#41617f"></rect><rect x="186" y="86" width="26" height="22" fill="#5980a6"></rect><rect x="216" y="86" width="26" height="22" fill="#7d9fc0"></rect><rect x="246" y="86" width="26" height="22" fill="#a9c1d7"></rect><rect x="276" y="86" width="26" height="22" fill="#7d9fc0"></rect><rect x="306" y="86" width="26" height="22" fill="#dbe5ee"></rect><rect x="336" y="86" width="26" height="22" fill="#eef3f8"></rect><rect x="366" y="86" width="26" height="22" fill="#eef3f8"></rect>
+                <rect x="36" y="114" width="26" height="22" fill="#dbe5ee"></rect><rect x="66" y="114" width="26" height="22" fill="#7d9fc0"></rect><rect x="96" y="114" width="26" height="22" fill="#41617f"></rect><rect x="126" y="114" width="26" height="22" fill="#41617f"></rect><rect x="156" y="114" width="26" height="22" fill="#5980a6"></rect><rect x="186" y="114" width="26" height="22" fill="#7d9fc0"></rect><rect x="216" y="114" width="26" height="22" fill="#5980a6"></rect><rect x="246" y="114" width="26" height="22" fill="#7d9fc0"></rect><rect x="276" y="114" width="26" height="22" fill="#a9c1d7"></rect><rect x="306" y="114" width="26" height="22" fill="#eef3f8"></rect><rect x="336" y="114" width="26" height="22" fill="#eef3f8"></rect><rect x="366" y="114" width="26" height="22" fill="#eef3f8"></rect>
+                <rect x="36" y="142" width="26" height="22" fill="#dbe5ee"></rect><rect x="66" y="142" width="26" height="22" fill="#a9c1d7"></rect><rect x="96" y="142" width="26" height="22" fill="#5980a6"></rect><rect x="126" y="142" width="26" height="22" fill="#5980a6"></rect><rect x="156" y="142" width="26" height="22" fill="#7d9fc0"></rect><rect x="186" y="142" width="26" height="22" fill="#5980a6"></rect><rect x="216" y="142" width="26" height="22" fill="#a9c1d7"></rect><rect x="246" y="142" width="26" height="22" fill="#7d9fc0"></rect><rect x="276" y="142" width="26" height="22" fill="#dbe5ee"></rect><rect x="306" y="142" width="26" height="22" fill="#eef3f8"></rect><rect x="336" y="142" width="26" height="22" fill="#eef3f8"></rect><rect x="366" y="142" width="26" height="22" fill="#eef3f8"></rect>
+                <rect x="36" y="170" width="26" height="22" fill="#eef3f8"></rect><rect x="66" y="170" width="26" height="22" fill="#dbe5ee"></rect><rect x="96" y="170" width="26" height="22" fill="#a9c1d7"></rect><rect x="126" y="170" width="26" height="22" fill="#a9c1d7"></rect><rect x="156" y="170" width="26" height="22" fill="#dbe5ee"></rect><rect x="186" y="170" width="26" height="22" fill="#dbe5ee"></rect><rect x="216" y="170" width="26" height="22" fill="#eef3f8"></rect><rect x="246" y="170" width="26" height="22" fill="#eef3f8"></rect><rect x="276" y="170" width="26" height="22" fill="#eef3f8"></rect><rect x="306" y="170" width="26" height="22" fill="#eef3f8"></rect><rect x="336" y="170" width="26" height="22" fill="#eef3f8"></rect><rect x="366" y="170" width="26" height="22" fill="#eef3f8"></rect>
+              </g>
+              <g fontSize="10.5" fill="#8a8d90"><text x="36" y="210">Thấp</text><rect x="70" y="200" width="18" height="10" fill="#eef3f8"></rect><rect x="90" y="200" width="18" height="10" fill="#a9c1d7"></rect><rect x="110" y="200" width="18" height="10" fill="#5980a6"></rect><rect x="130" y="200" width="18" height="10" fill="#41617f"></rect><text x="154" y="210">Cao</text></g>
+            </svg>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isDevStatus }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--color-divider);background:#fff">
+          <span style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#6d6f71">Bảng trạng thái thời gian thực</span>
+          <span style="font-size:12px;color:#76797b">Tự động làm mới mỗi 15 giây · cập nhật lúc 14:32:22</span>
+          <button class="btn btn-secondary" style="margin-left:auto;height:30px;font-size:12.5px">Chế độ toàn màn hình</button>
+        </div>
+
+        <div class="oee-kpi4" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px">
+          <sc-for list="{{ devices }}" as="d" hint-placeholder-count="6">
+            <div style="border:1px solid var(--color-divider);background:#fff">
+              <div style="display:flex;align-items:flex-start;gap:10px;padding:12px 13px;border-bottom:1px solid rgba(29,31,32,.08)">
+                <span style="{{ d.dotStyle }}"></span>
+                <div style="min-width:0;flex:1">
+                  <div style="font-weight:600;font-size:14.5px">{{ d.id }}</div>
+                  <div style="font-size:12px;color:#76797b">{{ d.name }}</div>
+                </div>
+                <span class="tag" style="{{ d.badge }}">{{ d.statusLabel }}</span>
+              </div>
+              <div style="padding:11px 13px;display:grid;grid-template-columns:1fr 1fr;gap:9px">
+                <sc-for list="{{ d.params }}" as="p" hint-placeholder-count="4">
+                  <div><div style="font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#6d6f71">{{ p.k }}</div>
+                    <div style="font-size:17px;font-weight:600">{{ p.v }}</div></div>
+                </sc-for>
+              </div>
+              <div style="padding:0 13px 11px">
+                <div style="display:flex;height:14px;border-radius:4px;overflow:hidden">
+                  <sc-for list="{{ d.timeline }}" as="t" hint-placeholder-count="6">
+                    <div style="{{ t.style }}"></div>
+                  </sc-for>
+                </div>
+                <div style="display:flex;justify-content:space-between;font-size:10.5px;color:#8a8d90;margin-top:4px">
+                  <span>06:00</span><span>Timeline ca hiện tại</span><span>15:00</span>
+                </div>
+              </div>
+              <div style="display:flex;align-items:center;gap:8px;padding:9px 13px;border-top:1px solid rgba(29,31,32,.08);font-size:12px;color:#5d5d60">
+                <span class="tag" style="{{ d.connBadge }}">{{ d.connLabel }}</span>
+                <span style="margin-left:auto">{{ d.last }}</span>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+
+        <div style="border:1px solid var(--color-divider);background:#fff">
+          <div style="padding:10px 13px;border-bottom:1px solid var(--color-divider)"><h5 style="margin:0;font-size:15px">Nhật ký chuyển trạng thái</h5></div>
+          <div class="oee-scroll"><table style="width:100%;min-width:720px;border-collapse:collapse">
+            <thead><tr><th class="oee-th">Thời điểm</th><th class="oee-th">Thiết bị</th><th class="oee-th">Trạng thái trước</th><th class="oee-th">Trạng thái sau</th><th class="oee-th">Nguyên nhân</th><th class="oee-th">Nguồn</th></tr></thead>
+            <tbody>
+              <tr><td class="oee-td">14:31</td><td class="oee-td">CMP-B-0348</td><td class="oee-td" style="color:#5d5d60">Đang hoạt động</td><td class="oee-td"><span class="tag" style="background:#f1ded6;color:#7d3418">Lỗi / bất thường</span></td><td class="oee-td" style="color:#5d5d60">Áp suất dưới ngưỡng</td><td class="oee-td" style="color:#5d5d60">IoT</td></tr>
+              <tr><td class="oee-td">14:26</td><td class="oee-td">WLD-B-0217</td><td class="oee-td" style="color:#5d5d60">Đang hoạt động</td><td class="oee-td"><span class="tag" style="background:#e4e4e6;color:#48484a">Đang dừng</span></td><td class="oee-td" style="color:#5d5d60">Chờ vật tư (thợ khai báo)</td><td class="oee-td" style="color:#5d5d60">Người nhập</td></tr>
+              <tr><td class="oee-td">14:05</td><td class="oee-td">TRC-02-7815</td><td class="oee-td" style="color:#5d5d60">Đang hoạt động</td><td class="oee-td"><span class="tag" style="background:#e4e7ea;color:#2c455d">Mất kết nối</span></td><td class="oee-td" style="color:#5d5d60">Không nhận gói tin quá 5 phút</td><td class="oee-td" style="color:#5d5d60">Hệ thống</td></tr>
+              <tr><td class="oee-td">13:12</td><td class="oee-td">WLD-A-0142</td><td class="oee-td" style="color:#5d5d60">Đang dừng</td><td class="oee-td"><span class="tag" style="background:#e0ebe3;color:#255a3a">Đang hoạt động</span></td><td class="oee-td" style="color:#5d5d60">Hồ quang bật</td><td class="oee-td" style="color:#5d5d60">IoT</td></tr>
+            </tbody>
+          </table></div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isConn }}" hint-placeholder-val="{{ false }}">
+        <div class="oee-kpi4" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid var(--color-divider);background:#fff">
+          <div class="kpi" style="border-right:1px solid var(--color-divider)"><div class="kpi-l">Thiết bị trực tuyến</div><div class="kpi-v">05<span style="font-size:17px">/06</span></div><div class="kpi-s">01 mất kết nối 27 phút</div></div>
+          <div class="kpi" style="border-right:1px solid var(--color-divider)"><div class="kpi-l">Tỷ lệ thu thập 24h</div><div class="kpi-v">97,3%</div><div class="kpi-s">Ngưỡng POC ≥ 95%</div></div>
+          <div class="kpi" style="border-right:1px solid var(--color-divider)"><div class="kpi-l">Độ trễ p95</div><div class="kpi-v">18<span style="font-size:17px">s</span></div><div class="kpi-s">Ngưỡng POC ≤ 60s</div></div>
+          <div class="kpi"><div class="kpi-l">Sự kiện mất kết nối 7 ngày</div><div class="kpi-v">07</div><div class="kpi-s">Tổng thời gian gián đoạn 3h 12p</div></div>
+        </div>
+
+        <div style="border:1px solid var(--color-divider);background:#fff">
+          <div style="padding:10px 13px;border-bottom:1px solid var(--color-divider)"><h5 style="margin:0;font-size:15px">Trạng thái kết nối &amp; chất lượng dữ liệu theo thiết bị</h5></div>
+          <div class="oee-scroll"><table style="width:100%;min-width:900px;border-collapse:collapse">
+            <thead><tr>
+              <th class="oee-th">Thiết bị</th><th class="oee-th">Gateway / Node</th><th class="oee-th">Kết nối</th>
+              <th class="oee-th" style="text-align:right">Uptime 24h</th><th class="oee-th" style="text-align:right">Gói nhận / kỳ vọng</th>
+              <th class="oee-th" style="text-align:right">Tỷ lệ</th><th class="oee-th" style="text-align:right">Độ trễ</th><th class="oee-th">Gói tin cuối</th>
+            </tr></thead>
+            <tbody>
+              <tr><td class="oee-td">WLD-A-0142</td><td class="oee-td" style="color:#5d5d60">GW-XA-01 / N-114</td><td class="oee-td"><span class="tag" style="background:#e0ebe3;color:#255a3a">Trực tuyến</span></td><td class="oee-td" style="text-align:right">99,8%</td><td class="oee-td" style="text-align:right">1.436 / 1.440</td><td class="oee-td" style="text-align:right">99,7%</td><td class="oee-td" style="text-align:right">12 s</td><td class="oee-td" style="color:#5d5d60">14:32:10</td></tr>
+              <tr><td class="oee-td">WLD-B-0217</td><td class="oee-td" style="color:#5d5d60">GW-XB-01 / N-117</td><td class="oee-td"><span class="tag" style="background:#e0ebe3;color:#255a3a">Trực tuyến</span></td><td class="oee-td" style="text-align:right">98,4%</td><td class="oee-td" style="text-align:right">1.412 / 1.440</td><td class="oee-td" style="text-align:right">98,1%</td><td class="oee-td" style="text-align:right">21 s</td><td class="oee-td" style="color:#5d5d60">14:31:58</td></tr>
+              <tr><td class="oee-td">CMP-A-0331</td><td class="oee-td" style="color:#5d5d60">GW-KA-01 / N-203</td><td class="oee-td"><span class="tag" style="background:#e0ebe3;color:#255a3a">Trực tuyến</span></td><td class="oee-td" style="text-align:right">100%</td><td class="oee-td" style="text-align:right">1.440 / 1.440</td><td class="oee-td" style="text-align:right">100%</td><td class="oee-td" style="text-align:right">9 s</td><td class="oee-td" style="color:#5d5d60">14:32:04</td></tr>
+              <tr><td class="oee-td">CMP-B-0348</td><td class="oee-td" style="color:#5d5d60">GW-KB-01 / N-208</td><td class="oee-td"><span class="tag" style="background:#e0ebe3;color:#255a3a">Trực tuyến</span></td><td class="oee-td" style="text-align:right">99,1%</td><td class="oee-td" style="text-align:right">1.427 / 1.440</td><td class="oee-td" style="text-align:right">99,1%</td><td class="oee-td" style="text-align:right">16 s</td><td class="oee-td" style="color:#5d5d60">14:31:47</td></tr>
+              <tr><td class="oee-td">TRC-01-7742</td><td class="oee-td" style="color:#5d5d60">GPS-4G / N-301</td><td class="oee-td"><span class="tag" style="background:#e0ebe3;color:#255a3a">Trực tuyến</span></td><td class="oee-td" style="text-align:right">96,2%</td><td class="oee-td" style="text-align:right">1.385 / 1.440</td><td class="oee-td" style="text-align:right">96,2%</td><td class="oee-td" style="text-align:right">28 s</td><td class="oee-td" style="color:#5d5d60">14:32:14</td></tr>
+              <tr><td class="oee-td">TRC-02-7815</td><td class="oee-td" style="color:#5d5d60">GPS-4G / N-305</td><td class="oee-td"><span class="tag" style="background:#e4e7ea;color:#2c455d">Mất kết nối</span></td><td class="oee-td" style="text-align:right;color:#8c3b1e">81,3%</td><td class="oee-td" style="text-align:right">1.171 / 1.440</td><td class="oee-td" style="text-align:right;color:#8c3b1e">81,3%</td><td class="oee-td" style="text-align:right">—</td><td class="oee-td" style="color:#5d5d60">14:05:02</td></tr>
+            </tbody>
+          </table></div>
+        </div>
+
+        <div class="oee-charts" style="display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:12px">
+          <div style="border:1px solid var(--color-divider);background:#fff">
+            <div style="padding:10px 13px;border-bottom:1px solid var(--color-divider)"><h5 style="margin:0;font-size:15px">Tỷ lệ thu thập dữ liệu — 7 ngày</h5></div>
+            <svg viewBox="0 0 560 200" style="width:100%;height:200px;display:block">
+              <g stroke="#eceded"><line x1="46" y1="30" x2="540" y2="30"></line><line x1="46" y1="80" x2="540" y2="80"></line><line x1="46" y1="130" x2="540" y2="130"></line></g>
+              <line x1="46" y1="90" x2="540" y2="90" stroke="#8c3b1e" strokeDasharray="4 3"></line>
+              <text x="46" y="86" fontSize="10" fill="#8c3b1e">Ngưỡng 95%</text>
+              <g fontSize="10.5" fill="#8a8d90"><text x="14" y="34">100</text><text x="20" y="84">95</text><text x="20" y="134">90</text></g>
+              <polyline points="80,42 156,48 232,86 308,40 384,44 460,52 528,38" fill="none" stroke="#5980a6" strokeWidth="2.2"></polyline>
+              <g fontSize="10.5" fill="#8a8d90" textAnchor="middle"><text x="80" y="164">05/09</text><text x="156" y="164">06/09</text><text x="232" y="164">07/09</text><text x="308" y="164">08/09</text><text x="384" y="164">09/09</text><text x="460" y="164">10/09</text><text x="528" y="164">11/09</text></g>
+            </svg>
+          </div>
+          <div style="border:1px solid var(--color-divider);background:#fff">
+            <div style="padding:10px 13px;border-bottom:1px solid var(--color-divider)"><h5 style="margin:0;font-size:15px">Sự kiện mất kết nối gần nhất</h5></div>
+            <div style="padding:6px 13px 13px">
+              <div style="display:flex;gap:10px;padding:9px 0;border-bottom:1px solid rgba(29,31,32,.08);font-size:13px"><span style="color:#76797b;width:74px;flex:none">11/09 14:05</span><span style="flex:1">TRC-02-7815 · mất tín hiệu 4G</span><span style="color:#8c3b1e">27 phút</span></div>
+              <div style="display:flex;gap:10px;padding:9px 0;border-bottom:1px solid rgba(29,31,32,.08);font-size:13px"><span style="color:#76797b;width:74px;flex:none">10/09 09:41</span><span style="flex:1">TRC-01-7742 · vùng khuất sóng bãi 2</span><span style="color:#5d5d60">12 phút</span></div>
+              <div style="display:flex;gap:10px;padding:9px 0;border-bottom:1px solid rgba(29,31,32,.08);font-size:13px"><span style="color:#76797b;width:74px;flex:none">08/09 16:20</span><span style="flex:1">GW-XB-01 · mất nguồn gateway</span><span style="color:#5d5d60">48 phút</span></div>
+              <div style="display:flex;gap:10px;padding:9px 0;font-size:13px"><span style="color:#76797b;width:74px;flex:none">07/09 11:02</span><span style="flex:1">WLD-B-0217 · lỗi cảm biến dòng</span><span style="color:#5d5d60">1h 05p</span></div>
+            </div>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isConfirm }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--color-divider);background:#fff">
+          <div class="seg2"><button data-on="1">Chờ xác nhận (3)</button><button>Đã xác nhận</button><button>Yêu cầu nhập lại</button></div>
+          <select class="input" style="width:190px;height:34px"><option>Tất cả người vận hành</option></select>
+          <input class="input" style="width:210px;height:34px;background:#fff" value="10/09/2026 – 11/09/2026">
+          <button class="btn btn-secondary" style="margin-left:auto">Chọn tất cả</button>
+          <button class="btn btn-primary">Xác nhận mục đã chọn</button>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <div style="border:1px solid var(--color-divider);background:#fff">
+            <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:11px 13px;border-bottom:1px solid rgba(29,31,32,.08)">
+              <div><div style="font-weight:600">S-2038 · Lê Hoàng Nam</div><div style="font-size:12px;color:#76797b">WLD-B-0217 · 11/09 06:05 → 14:24 · Thợ hàn bậc 4</div></div>
+              <span class="tag" style="background:#eee6d4;color:#6a4f13">Chờ xác nhận</span>
+              <span style="margin-left:auto;font-size:12px;color:#76797b">Gửi lúc 14:26 · còn 21 giờ trước khi tự động chuyển trạng thái</span>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-bottom:1px solid rgba(29,31,32,.08)">
+              <div style="padding:11px 13px"><div class="kpi-l" style="min-height:0">Giờ chạy máy (IoT)</div><div style="font-size:19px;font-weight:600">8,32 h</div></div>
+              <div style="padding:11px 13px"><div class="kpi-l" style="min-height:0">Thợ khai báo</div><div style="font-size:19px;font-weight:600">8,00 h</div></div>
+              <div style="padding:11px 13px"><div class="kpi-l" style="min-height:0">Sai lệch</div><div style="font-size:19px;font-weight:600">3,8%</div></div>
+              <div style="padding:11px 13px"><div class="kpi-l" style="min-height:0">Sản lượng khai báo</div><div style="font-size:19px;font-weight:600">9,8 m</div></div>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:14px;padding:11px 13px;font-size:13px">
+              <div style="flex:1;min-width:240px"><span style="color:#6d6f71">Nguyên nhân dừng: </span>Chờ vật tư (46 phút)<br><span style="color:#6d6f71">Ghi chú: </span>Máy dừng do thiếu que hàn, đã báo tổ trưởng</div>
+              <div style="display:flex;gap:8px">
+                <div style="width:64px;height:48px;border:1px dashed #b7b7ba;border-radius:6px;display:grid;place-items:center;font-size:10.5px;color:#8a8d90;text-align:center">Ảnh 1</div>
+                <div style="width:64px;height:48px;border:1px dashed #b7b7ba;border-radius:6px;display:grid;place-items:center;font-size:10.5px;color:#8a8d90;text-align:center">Ảnh 2</div>
+              </div>
+            </div>
+            <div style="display:flex;gap:8px;padding:11px 13px;border-top:1px solid rgba(29,31,32,.08)">
+              <button class="btn btn-primary">Xác nhận</button>
+              <button class="btn btn-secondary">Yêu cầu nhập lại</button>
+              <button class="btn btn-secondary">Xem phiên</button>
+            </div>
+          </div>
+
+          <div style="border:1px solid var(--color-divider);background:#fff">
+            <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:11px 13px;border-bottom:1px solid rgba(29,31,32,.08)">
+              <div><div style="font-weight:600">S-2033 · Nguyễn Bá Tuấn</div><div style="font-size:12px;color:#76797b">TRC-02-7815 · 11/09 05:50 → 14:05 · Lái xe cẩu</div></div>
+              <span class="tag" style="background:#f1ded6;color:#7d3418">Lệch vượt ngưỡng 5%</span>
+              <span style="margin-left:auto;font-size:12px;color:#76797b">Thiết bị mất kết nối trong ca — cần đối soát thủ công</span>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-bottom:1px solid rgba(29,31,32,.08)">
+              <div style="padding:11px 13px"><div class="kpi-l" style="min-height:0">Giờ nổ máy (IoT)</div><div style="font-size:19px;font-weight:600">2,73 h</div></div>
+              <div style="padding:11px 13px"><div class="kpi-l" style="min-height:0">Thợ khai báo</div><div style="font-size:19px;font-weight:600">8,00 h</div></div>
+              <div style="padding:11px 13px"><div class="kpi-l" style="min-height:0">Sai lệch</div><div style="font-size:19px;font-weight:600;color:#8c3b1e">65,9%</div></div>
+              <div style="padding:11px 13px"><div class="kpi-l" style="min-height:0">Sản lượng khai báo</div><div style="font-size:19px;font-weight:600">6 chu kỳ</div></div>
+            </div>
+            <div style="padding:11px 13px;font-size:13px"><span style="color:#6d6f71">Ghi chú: </span>Thiết bị mất tín hiệu từ 14:05, đề nghị điều độ đối soát với sổ giao ca.</div>
+            <div style="display:flex;gap:8px;padding:11px 13px;border-top:1px solid rgba(29,31,32,.08)">
+              <button class="btn btn-primary">Xác nhận theo số thủ công</button>
+              <button class="btn btn-secondary">Yêu cầu nhập lại</button>
+              <button class="btn btn-secondary">Gắn cờ sự cố IoT</button>
+            </div>
+          </div>
+
+          <div style="border:1px solid var(--color-divider);background:#fff">
+            <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:11px 13px;border-bottom:1px solid rgba(29,31,32,.08)">
+              <div><div style="font-weight:600">S-2025 · Lê Hoàng Nam</div><div style="font-size:12px;color:#76797b">WLD-B-0217 · 09/09 06:02 → 14:10 · Thợ hàn bậc 4</div></div>
+              <span class="tag" style="background:#f1ded6;color:#7d3418">Quá hạn 24 giờ</span>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-bottom:1px solid rgba(29,31,32,.08)">
+              <div style="padding:11px 13px"><div class="kpi-l" style="min-height:0">Giờ chạy máy (IoT)</div><div style="font-size:19px;font-weight:600">8,13 h</div></div>
+              <div style="padding:11px 13px"><div class="kpi-l" style="min-height:0">Thợ khai báo</div><div style="font-size:19px;font-weight:600">7,50 h</div></div>
+              <div style="padding:11px 13px"><div class="kpi-l" style="min-height:0">Sai lệch</div><div style="font-size:19px;font-weight:600;color:#8c3b1e">7,7%</div></div>
+              <div style="padding:11px 13px"><div class="kpi-l" style="min-height:0">Sản lượng khai báo</div><div style="font-size:19px;font-weight:600">8,2 m</div></div>
+            </div>
+            <div style="display:flex;gap:8px;padding:11px 13px">
+              <button class="btn btn-primary">Xác nhận</button>
+              <button class="btn btn-secondary">Yêu cầu nhập lại</button>
+            </div>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isReport }}" hint-placeholder-val="{{ false }}">
+        <div style="border:1px solid var(--color-divider);border-radius:8px;background:#fff;padding:13px;display:flex;flex-direction:column;gap:11px">
+          <div style="display:flex;flex-wrap:wrap;gap:6px">
+            <sc-for list="{{ rptTypes }}" as="r" hint-placeholder-count="4">
+              <button class="oee-chip" data-on="{{ r.on }}" onClick="{{ r.go }}">{{ r.label }}</button>
+            </sc-for>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;align-items:flex-end;gap:10px">
+            <div class="field" style="width:250px"><label>Khoảng thời gian</label>
+              <div style="display:flex;gap:5px;flex-wrap:wrap">
+                <sc-for list="{{ rptRanges }}" as="q" hint-placeholder-count="4">
+                  <button class="oee-chip" style="font-size:12px;padding:5px 9px" data-on="{{ q.on }}" onClick="{{ q.go }}">{{ q.label }}</button>
+                </sc-for>
+              </div>
+            </div>
+            <sc-if value="{{ rptCustom }}" hint-placeholder-val="{{ true }}">
+              <div class="field" style="width:196px"><label>Từ ngày – đến ngày</label><input class="input" style="background:#fff" value="01/09/2026 – 11/09/2026"></div>
+            </sc-if>
+            <sc-if value="{{ fGroup }}" hint-placeholder-val="{{ true }}">
+              <div class="field" style="width:168px"><label>Nhóm thiết bị</label><select class="input"><option>Tất cả nhóm</option><option>Máy hàn</option><option>Máy nén khí</option><option>Xe tải cẩu</option></select></div>
+            </sc-if>
+            <sc-if value="{{ fObject }}" hint-placeholder-val="{{ true }}">
+              <div class="field" style="width:178px"><label>Đối tượng báo cáo</label><select class="input"><option>Tất cả {{ rptObjLabel }}</option></select></div>
+            </sc-if>
+            <sc-if value="{{ fProject }}" hint-placeholder-val="{{ true }}">
+              <div class="field" style="width:172px"><label>Dự án / khu vực</label><select class="input"><option>Tất cả dự án</option></select></div>
+            </sc-if>
+            <div style="display:flex;gap:8px;margin-left:auto">
+              <div style="position:relative">
+                <button class="btn btn-secondary" onClick="{{ toggleExport }}">Xuất báo cáo ▾</button>
+                <div class="oee-menu" data-open="{{ exportOpen }}">
+                  <button class="oee-menu-i" onClick="{{ closeExport }}">Excel (.xlsx)</button>
+                  <button class="oee-menu-i" onClick="{{ closeExport }}">PDF</button>
+                </div>
+              </div>
+              <button class="btn btn-primary">Xem báo cáo</button>
+            </div>
+          </div>
+        </div>
+
+        <div style="border:1px solid var(--color-divider);border-radius:8px;background:#fff;overflow:hidden">
+          <div style="padding:14px 15px;display:flex;flex-wrap:wrap;align-items:flex-end;gap:12px">
+            <div style="min-width:0">
+              <div style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#8a93a0">Báo cáo · {{ rptTitle }}</div>
+              <h4 style="margin:3px 0 0;font-size:19px;letter-spacing:-.01em">Kỳ báo cáo 01/09 – 11/09/2026</h4>
+              <div style="font-size:12px;color:#76797b;margin-top:3px">Chốt dữ liệu 11/09/2026 06:00 · Phạm vi 06 thiết bị POC · Lập bởi Nguyễn Văn Hải</div>
+            </div>
+            <span class="tag" style="background:#e0ebe3;color:#255a3a;margin-left:auto">Đã đối soát đến 10/09</span>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:rgba(16,24,40,.07);border-top:1px solid rgba(16,24,40,.07);border-bottom:1px solid rgba(16,24,40,.07)">
+            <sc-for list="{{ rptKpis }}" as="k" hint-placeholder-count="4">
+              <div class="kpi" style="background:#fff;padding:13px 15px">
+                <div class="kpi-l">{{ k.l }}</div>
+                <div class="kpi-v">{{ k.v }}<span style="font-size:15px;font-weight:600;color:#8a93a0;margin-left:3px">{{ k.u }}</span></div>
+                <sc-if value="{{ k.hasS }}" hint-placeholder-val="{{ false }}"><div class="kpi-s">{{ k.s }}</div></sc-if>
+              </div>
+            </sc-for>
+          </div>
+          <sc-if value="{{ rptEmpty }}" hint-placeholder-val="{{ false }}">
+            <div style="padding:46px 20px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:9px">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#b6bcc3" strokeWidth="1.4"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M3 9h18M9 9v11"></path></svg>
+              <div style="font-size:14.5px;font-weight:600">Không có dữ liệu trong khoảng thời gian đã chọn</div>
+              <div style="font-size:12.5px;color:#76797b;max-width:380px">Thử mở rộng khoảng thời gian hoặc bỏ bớt điều kiện lọc đối tượng báo cáo.</div>
+              <button class="btn btn-secondary" style="margin-top:4px">Điều chỉnh bộ lọc</button>
+            </div>
+          </sc-if>
+          <div class="oee-scroll oee-rpt"><table style="width:100%;border-collapse:collapse;min-width:{{ rptMinW }}">
+            <thead><tr>
+              <sc-for list="{{ rptCols }}" as="c" hint-placeholder-count="7">
+                <th class="oee-th" style="{{ c.sp }}">{{ c.label }}</th>
+              </sc-for>
+            </tr></thead>
+            <tbody>
+              <sc-for list="{{ rptRows }}" as="r" hint-placeholder-count="6">
+                <tr>
+                  <sc-for list="{{ r.cells }}" as="c" hint-placeholder-count="7">
+                    <td class="oee-td" style="{{ c.tdsp }}"><span class="{{ c.cls }}" style="{{ c.sp }}">{{ c.text }}</span></td>
+                  </sc-for>
+                </tr>
+              </sc-for>
+              <sc-for list="{{ rptTotal }}" as="r" hint-placeholder-count="0">
+                <tr style="font-weight:600;background:#fafbfc">
+                  <sc-for list="{{ r.cells }}" as="c" hint-placeholder-count="7">
+                    <td class="oee-td" style="{{ c.tdsp }}"><span class="{{ c.cls }}" style="{{ c.sp }}">{{ c.text }}</span></td>
+                  </sc-for>
+                </tr>
+              </sc-for>
+            </tbody>
+          </table></div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isDevMgmt }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--color-divider);background:#fff">
+          <div style="position:relative">
+            <svg style="position:absolute;left:8px;top:9px" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#76797b" strokeWidth="1.5"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+            <input class="input" style="width:210px;height:34px;padding-left:27px;background:#fff" placeholder="Tìm mã hoặc tên thiết bị…">
+          </div>
+          <select class="input" style="width:175px;height:34px"><option>Tất cả nhóm</option></select>
+          <select class="input" style="width:175px;height:34px"><option>Tất cả trạng thái quản lý</option><option>Đang sử dụng</option><option>Ngừng sử dụng</option></select>
+          <sc-if value="{{ showBulkQr }}" hint-placeholder-val="{{ true }}">
+            <button class="btn btn-secondary" style="margin-left:auto">In tem QR hàng loạt</button>
+          </sc-if>
+          <button class="btn btn-secondary">Nhập từ Excel</button>
+          <button class="btn btn-primary">+ Thêm thiết bị</button>
+        </div>
+
+        <div class="oee-split" data-detail="{{ detailModeKey }}">
+          <div style="border:1px solid var(--color-divider);background:#fff">
+            <div style="display:flex;align-items:center;gap:10px;padding:12px 14px;border-bottom:1px solid var(--color-divider)">
+              <h5 style="margin:0;font-size:15px">Danh sách {{ mgmtType }}</h5>
+              <span class="tag tag-neutral">{{ mgmtCount }}&nbsp;thiết bị</span>
+            </div>
+            <div class="oee-scroll"><table style="width:100%;min-width:820px;border-collapse:collapse">
+              <thead><tr>
+                <th class="oee-th">Mã thiết bị</th><th class="oee-th">Tên thiết bị</th><th class="oee-th">Nhóm</th>
+                <th class="oee-th">Mã tài sản</th><th class="oee-th">Khu vực lắp đặt</th><th class="oee-th">Node IoT</th>
+                <th class="oee-th">Trạng thái</th><th class="oee-th"></th>
+              </tr></thead>
+              <tbody>
+                <sc-for list="{{ mgmtDevices }}" as="d" hint-placeholder-count="2">
+                  <tr>
+                    <td class="oee-td" style="font-weight:500">{{ d.id }}</td>
+                    <td class="oee-td">{{ d.name }}</td>
+                    <td class="oee-td" style="color:#5d5d60">{{ d.typeLabel }}</td>
+                    <td class="oee-td" style="color:#5d5d60">{{ d.asset }}</td>
+                    <td class="oee-td" style="color:#5d5d60">{{ d.area }}</td>
+                    <td class="oee-td" style="color:#5d5d60">{{ d.node }}</td>
+                    <td class="oee-td"><span class="tag" style="background:#e0ebe3;color:#255a3a">Đang sử dụng</span></td>
+                    <td class="oee-td"><button class="btn btn-ghost" style="font-size:12.5px" onClick="{{ d.open }}">Chi tiết</button></td>
+                  </tr>
+                </sc-for>
+              </tbody>
+            </table></div>
+          </div>
+          <div class="oee-detailwrap" data-mode="{{ detailModeKey }}" data-open="{{ detailOpen }}">
+          <div style="border:1px solid var(--color-divider);background:#fff">
+            <div style="display:flex;align-items:center;gap:10px;padding:12px 14px;border-bottom:1px solid var(--color-divider)"><h5 style="margin:0;font-size:15px">Thông tin định danh · {{ mgmtSel.id }}</h5>
+              <button class="oee-detailclose" style="margin-left:auto" onClick="{{ closeDetail }}"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6"><path d="M6 6l12 12M18 6 6 18"></path></svg></button>
+            </div>
+            <div style="padding:13px;display:flex;flex-direction:column;gap:11px">
+              <div class="field"><label>Machine ID (không thay đổi)</label><input class="input" value="{{ mgmtSel.id }}" disabled="{{ true }}"></div>
+              <div class="field"><label>Tên thiết bị</label><input class="input" style="background:#fff" value="{{ mgmtSel.name }}"></div>
+              <div class="field"><label>Nhóm thiết bị</label><select class="input"><option>{{ mgmtSel.typeLabel }}</option></select></div>
+              <div class="field"><label>Mã tài sản PTSC M&amp;C</label><input class="input" style="background:#fff" value="{{ mgmtSel.asset }}"></div>
+              <div class="field"><label>Khu vực lắp đặt</label><select class="input"><option>{{ mgmtSel.area }}</option></select></div>
+              <div class="field"><label>Trạng thái quản lý</label>
+                <div class="seg" style="width:100%">
+                  <label class="seg-opt" style="flex:1;justify-content:center"><input type="radio" name="dst" defaultChecked="{{ true }}">Đang sử dụng</label>
+                  <label class="seg-opt" style="flex:1;justify-content:center"><input type="radio" name="dst">Ngừng sử dụng</label>
+                </div>
+              </div>
+              <div style="font-size:11.5px;color:#76797b;line-height:1.5">Việc ngừng sử dụng không xoá Machine ID và không tách rời lịch sử phiên đã phát sinh.</div>
+              <div style="display:flex;gap:8px"><button class="btn btn-primary" style="flex:1">Lưu thay đổi</button><button class="btn btn-secondary">Huỷ</button></div>
+            </div>
+            <sc-if value="{{ showQr }}" hint-placeholder-val="{{ true }}">
+            <div style="padding:12px 14px;border-top:1px solid var(--color-divider);display:flex;align-items:center;gap:9px">
+              <h5 style="margin:0;font-size:15px">QR Code định danh</h5>
+              <span class="tag" style="background:#e0ebe3;color:#255a3a;margin-left:auto">Đang hiệu lực</span>
+            </div>
+            <div style="padding:0 13px 14px;display:flex;gap:13px">
+              <div style="width:92px;height:92px;flex:none;border:1px solid var(--color-divider);border-radius:6px;padding:6px;background:#fff">
+                <svg viewBox="0 0 40 40" style="width:100%;height:100%">
+                  <g fill="#1d1f20">
+                    <rect x="1" y="1" width="11" height="11" fill="none" stroke="#1d1f20" strokeWidth="2.4"></rect>
+                    <rect x="28" y="1" width="11" height="11" fill="none" stroke="#1d1f20" strokeWidth="2.4"></rect>
+                    <rect x="1" y="28" width="11" height="11" fill="none" stroke="#1d1f20" strokeWidth="2.4"></rect>
+                    <rect x="5" y="5" width="3" height="3"></rect><rect x="32" y="5" width="3" height="3"></rect><rect x="5" y="32" width="3" height="3"></rect>
+                    <rect x="16" y="2" width="3" height="3"></rect><rect x="21" y="6" width="3" height="3"></rect><rect x="16" y="10" width="3" height="3"></rect>
+                    <rect x="2" y="16" width="3" height="3"></rect><rect x="7" y="20" width="3" height="3"></rect><rect x="12" y="16" width="3" height="3"></rect>
+                    <rect x="17" y="17" width="3" height="3"></rect><rect x="22" y="21" width="3" height="3"></rect><rect x="27" y="17" width="3" height="3"></rect>
+                    <rect x="32" y="21" width="3" height="3"></rect><rect x="17" y="26" width="3" height="3"></rect><rect x="22" y="31" width="3" height="3"></rect>
+                    <rect x="27" y="27" width="3" height="3"></rect><rect x="32" y="32" width="3" height="3"></rect><rect x="12" y="35" width="3" height="3"></rect>
+                  </g>
+                </svg>
+              </div>
+              <div style="min-width:0;flex:1;display:flex;flex-direction:column;gap:8px">
+                <div style="display:grid;grid-template-columns:auto 1fr;gap:3px 10px;font-size:12.5px">
+                  <span style="color:#6d6f71">Machine ID</span><span style="font-weight:500">{{ mgmtSel.id }}</span>
+                  <span style="color:#6d6f71">Ngày cấp tem</span><span>02/09/2026</span>
+                  <span style="color:#6d6f71">Số lần cấp lại</span><span>0</span>
+                  <span style="color:#6d6f71">Vị trí dán</span><span>{{ mgmtSel.area }}</span>
+                </div>
+                <div style="display:flex;gap:8px;flex-wrap:wrap">
+                  <button class="btn btn-secondary" style="font-size:12.5px">Xem / In tem QR</button>
+                  <button class="btn btn-ghost" style="font-size:12.5px">Cấp lại tem</button>
+                </div>
+                <div style="font-size:11.5px;color:#76797b;line-height:1.5">Tem QR gắn cố định với Machine ID. Cấp lại tem (tem hỏng, bong/mờ, mất) không tạo thiết bị mới và giữ nguyên lịch sử vận hành.</div>
+              </div>
+            </div>
+            </sc-if>
+          </div>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isMaster }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--color-divider);background:#fff">
+          <span style="font-size:13px;font-weight:500">{{ msTitle }}</span>
+          <div style="position:relative">
+            <svg style="position:absolute;left:8px;top:9px" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#76797b" strokeWidth="1.5"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+            <input class="input" style="width:240px;height:34px;padding-left:27px;background:#fff" placeholder="{{ msSearch }}">
+          </div>
+          <button class="btn btn-secondary" style="margin-left:auto">Nhập từ Excel</button>
+          <button class="btn btn-primary">{{ msAdd }}</button>
+        </div>
+
+        <div style="border:1px solid var(--color-divider);background:#fff">
+          <div class="oee-scroll"><table style="width:100%;min-width:820px;border-collapse:collapse">
+            <thead><tr>
+              <sc-for list="{{ masterCols }}" as="c" hint-placeholder-count="7"><th class="oee-th">{{ c.label }}</th></sc-for>
+              <th class="oee-th"></th>
+            </tr></thead>
+            <tbody>
+              <sc-for list="{{ masterRows }}" as="row" hint-placeholder-count="6">
+                <tr>
+                  <sc-for list="{{ row.cells }}" as="c" hint-placeholder-count="7">
+                    <td class="oee-td" style="{{ c.tdsp }}"><span class="{{ c.cls }}" style="{{ c.sp }}">{{ c.text }}</span></td>
+                  </sc-for>
+                  <td class="oee-td"><button class="btn btn-ghost" style="font-size:12.5px">Sửa</button></td>
+                </tr>
+              </sc-for>
+            </tbody>
+          </table></div>
+          <div style="display:flex;align-items:center;gap:10px;padding:9px 13px;border-top:1px solid var(--color-divider);font-size:12.5px;color:#5d5d60">
+
+              <span>Hiển thị {{ msShown }} / {{ msTotal }} bản ghi</span>
+            <div style="margin-left:auto;display:flex;gap:6px">
+              <button class="btn btn-secondary" style="height:28px;font-size:12.5px">Trước</button>
+              <button class="btn btn-secondary" style="height:28px;font-size:12.5px" data-on="1">1</button>
+              <button class="btn btn-secondary" style="height:28px;font-size:12.5px">2</button>
+              <button class="btn btn-secondary" style="height:28px;font-size:12.5px">Sau</button>
+            </div>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isExcel }}" hint-placeholder-val="{{ false }}">
+        <div class="oee-split">
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <div style="border:1px solid var(--color-divider);background:#fff">
+              <div style="padding:10px 13px;border-bottom:1px solid var(--color-divider)"><h5 style="margin:0;font-size:15px">Bước 1 — Tải tệp Excel</h5></div>
+              <div style="padding:13px">
+                <div style="border:1px dashed #b7b7ba;border-radius:8px;padding:26px;text-align:center;background:#fafafb">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#8a8d90" strokeWidth="1.5" style="margin:0 auto 8px"><path d="M12 16V4M8 8l4-4 4 4M4 20h16"></path></svg>
+                  <div style="font-size:13.5px">Kéo thả tệp vào đây hoặc <a href="#">chọn tệp từ máy tính</a></div>
+                  <div style="font-size:11.5px;color:#76797b;margin-top:4px">Định dạng .xlsx theo template PTSC M&amp;C · tối đa 5 MB</div>
+                </div>
+                <div style="display:flex;align-items:center;gap:10px;margin-top:11px;padding:10px 12px;border:1px solid var(--color-divider);border-radius:6px">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5980a6" strokeWidth="1.5"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z"></path><path d="M14 3v5h5"></path></svg>
+                  <div style="flex:1;min-width:0"><div style="font-size:13px">master-data-thiet-bi-092026.xlsx</div><div style="font-size:11.5px;color:#76797b">142 KB · 48 dòng dữ liệu · tải lên 14:28</div></div>
+                  <button class="btn btn-secondary" style="height:30px;font-size:12.5px">Đổi tệp</button>
+                </div>
+                <div style="display:flex;gap:8px;margin-top:11px">
+                  <button class="btn btn-primary">Kiểm tra dữ liệu</button>
+                  <button class="btn btn-secondary">Tải template mẫu</button>
+                </div>
+              </div>
+            </div>
+
+            <div style="border:1px solid var(--color-divider);background:#fff">
+              <div style="padding:10px 13px;border-bottom:1px solid var(--color-divider);display:flex;align-items:center;gap:10px">
+                <h5 style="margin:0;font-size:15px">Bước 2 — Kết quả kiểm tra</h5>
+                <span class="tag" style="background:#f1ded6;color:#7d3418;margin-left:auto">3 dòng lỗi</span>
+                <span class="tag" style="background:#eee6d4;color:#6a4f13">2 dòng cảnh báo</span>
+                <span class="tag" style="background:#e0ebe3;color:#255a3a">43 dòng hợp lệ</span>
+              </div>
+              <div class="oee-scroll"><table style="width:100%;min-width:760px;border-collapse:collapse">
+                <thead><tr><th class="oee-th" style="width:60px">Dòng</th><th class="oee-th">Mã thiết bị</th><th class="oee-th">Tên thiết bị</th><th class="oee-th">Nhóm</th><th class="oee-th">Kết quả</th><th class="oee-th">Xử lý</th></tr></thead>
+                <tbody>
+                  <tr><td class="oee-td">7</td><td class="oee-td">WLD-A-0142</td><td class="oee-td">Máy hàn Lincoln 500A</td><td class="oee-td" style="color:#5d5d60">Máy hàn</td><td class="oee-td"><span class="tag" style="background:#eee6d4;color:#6a4f13">Trùng mã đã tồn tại</span></td><td class="oee-td"><select class="input" style="height:30px;width:150px"><option>Cập nhật bản ghi</option><option>Bỏ qua</option></select></td></tr>
+                  <tr><td class="oee-td">12</td><td class="oee-td" style="color:#8c3b1e">(trống)</td><td class="oee-td">Máy nén khí Hitachi</td><td class="oee-td" style="color:#5d5d60">Máy nén khí</td><td class="oee-td"><span class="tag" style="background:#f1ded6;color:#7d3418">Thiếu Machine ID</span></td><td class="oee-td"><button class="btn btn-ghost" style="font-size:12.5px">Sửa trực tiếp</button></td></tr>
+                  <tr><td class="oee-td">19</td><td class="oee-td">TRC-03-7901</td><td class="oee-td">Xe tải cẩu Tadano</td><td class="oee-td" style="color:#8c3b1e">Xe cẩu bánh xích</td><td class="oee-td"><span class="tag" style="background:#f1ded6;color:#7d3418">Nhóm không có trong danh mục</span></td><td class="oee-td"><button class="btn btn-ghost" style="font-size:12.5px">Chọn nhóm</button></td></tr>
+                  <tr><td class="oee-td">26</td><td class="oee-td">CMP-C-0402</td><td class="oee-td">Máy nén khí Kaeser</td><td class="oee-td" style="color:#5d5d60">Máy nén khí</td><td class="oee-td"><span class="tag" style="background:#eee6d4;color:#6a4f13">Thiếu khu vực lắp đặt</span></td><td class="oee-td"><button class="btn btn-ghost" style="font-size:12.5px">Bổ sung</button></td></tr>
+                  <tr><td class="oee-td">31</td><td class="oee-td" style="color:#8c3b1e">WLD A 0298</td><td class="oee-td">Máy hàn Fronius</td><td class="oee-td" style="color:#5d5d60">Máy hàn</td><td class="oee-td"><span class="tag" style="background:#f1ded6;color:#7d3418">Sai định dạng mã</span></td><td class="oee-td"><button class="btn btn-ghost" style="font-size:12.5px">Sửa trực tiếp</button></td></tr>
+                </tbody>
+              </table></div>
+              <div style="display:flex;gap:8px;padding:11px 13px;border-top:1px solid var(--color-divider)">
+                <button class="btn btn-primary">Ghi 43 dòng hợp lệ</button>
+                <button class="btn btn-secondary">Tải file lỗi</button>
+                <button class="btn btn-secondary">Huỷ import</button>
+              </div>
+            </div>
+          </div>
+
+          <div style="border:1px solid var(--color-divider);background:#fff">
+            <div style="padding:10px 13px;border-bottom:1px solid var(--color-divider)"><h5 style="margin:0;font-size:15px">Lịch sử nạp dữ liệu</h5></div>
+            <div style="padding:6px 13px 13px">
+              <div style="padding:10px 0;border-bottom:1px solid rgba(29,31,32,.08)"><div style="font-size:13px">master-data-nhan-su-0909.xlsx</div><div style="font-size:11.5px;color:#76797b">09/09 10:12 · 24/24 dòng thành công</div></div>
+              <div style="padding:10px 0;border-bottom:1px solid rgba(29,31,32,.08)"><div style="font-size:13px">master-data-du-an-0509.xlsx</div><div style="font-size:11.5px;color:#76797b">05/09 15:44 · 8/9 dòng thành công · 1 lỗi</div></div>
+              <div style="padding:10px 0"><div style="font-size:13px">master-data-thiet-bi-0209.xlsx</div><div style="font-size:11.5px;color:#76797b">02/09 08:30 · 6/6 dòng thành công</div></div>
+            </div>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isAccount }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--color-divider);background:#fff">
+          <div style="position:relative">
+            <svg style="position:absolute;left:8px;top:9px" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#76797b" strokeWidth="1.5"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+            <input class="input" style="width:210px;height:34px;padding-left:27px;background:#fff" placeholder="Tìm tài khoản…">
+          </div>
+          <select class="input" style="width:200px;height:34px"><option>Tất cả vai trò</option><option>Ban quản lý</option><option>Cán bộ quản lý MMTB</option><option>Điều độ BPTC/BDA</option><option>Tổ trưởng</option><option>Người vận hành</option><option>Quản trị hệ thống</option></select>
+          <select class="input" style="width:170px;height:34px"><option>Tất cả trạng thái</option></select>
+          <button class="btn btn-primary" style="margin-left:auto">+ Thêm tài khoản</button>
+        </div>
+
+        <div style="border:1px solid var(--color-divider);background:#fff">
+          <div class="oee-scroll"><table style="width:100%;min-width:860px;border-collapse:collapse">
+            <thead><tr>
+              <th class="oee-th">Tài khoản</th><th class="oee-th">Họ tên</th><th class="oee-th">Vai trò</th>
+              <th class="oee-th">Bộ phận</th><th class="oee-th">Phạm vi dữ liệu</th><th class="oee-th">Đăng nhập <br>gần nhất</th><th class="oee-th">Trạng thái</th><th class="oee-th"></th>
+            </tr></thead>
+            <tbody>
+              <tr><td class="oee-td">hai.nv</td><td class="oee-td">Nguyễn Văn Hải</td><td class="oee-td" style="color:#5d5d60">Cán bộ quản lý MMTB</td><td class="oee-td" style="color:#5d5d60">Phòng Thiết bị</td><td class="oee-td" style="color:#5d5d60">Toàn bộ thiết bị POC</td><td class="oee-td" style="color:#5d5d60">11/09 07:02</td><td class="oee-td"><span class="tag" style="background:#e0ebe3;color:#255a3a">Hoạt động</span></td><td class="oee-td"><button class="btn btn-ghost" style="font-size:12.5px">Sửa</button></td></tr>
+              <tr><td class="oee-td">van.tt</td><td class="oee-td">Trần Thị Vân</td><td class="oee-td" style="color:#5d5d60">Điều độ BPTC/BDA</td><td class="oee-td" style="color:#5d5d60">BPTC</td><td class="oee-td" style="color:#5d5d60">Dự án Block A-04</td><td class="oee-td" style="color:#5d5d60">11/09 06:45</td><td class="oee-td"><span class="tag" style="background:#e0ebe3;color:#255a3a">Hoạt động</span></td><td class="oee-td"><button class="btn btn-ghost" style="font-size:12.5px">Sửa</button></td></tr>
+              <tr><td class="oee-td">tu.lm</td><td class="oee-td">Lê Minh Tú</td><td class="oee-td" style="color:#5d5d60">Ban quản lý</td><td class="oee-td" style="color:#5d5d60">Ban Giám đốc</td><td class="oee-td" style="color:#5d5d60">Toàn bộ · chỉ xem</td><td class="oee-td" style="color:#5d5d60">10/09 17:20</td><td class="oee-td"><span class="tag" style="background:#e0ebe3;color:#255a3a">Hoạt động</span></td><td class="oee-td"><button class="btn btn-ghost" style="font-size:12.5px">Sửa</button></td></tr>
+              <tr><td class="oee-td">minh.tq</td><td class="oee-td">Trần Quốc Minh</td><td class="oee-td" style="color:#5d5d60">Người vận hành</td><td class="oee-td" style="color:#5d5d60">Xưởng hàn A</td><td class="oee-td" style="color:#5d5d60">Phiên của bản thân</td><td class="oee-td" style="color:#5d5d60">11/09 06:12</td><td class="oee-td"><span class="tag" style="background:#e0ebe3;color:#255a3a">Hoạt động</span></td><td class="oee-td"><button class="btn btn-ghost" style="font-size:12.5px">Sửa</button></td></tr>
+              <tr><td class="oee-td">son.vt</td><td class="oee-td">Võ Thanh Sơn</td><td class="oee-td" style="color:#5d5d60">Tổ trưởng</td><td class="oee-td" style="color:#5d5d60">Trạm khí</td><td class="oee-td" style="color:#5d5d60">Nhóm máy nén khí</td><td class="oee-td" style="color:#5d5d60">10/09 06:03</td><td class="oee-td"><span class="tag" style="background:#e0ebe3;color:#255a3a">Hoạt động</span></td><td class="oee-td"><button class="btn btn-ghost" style="font-size:12.5px">Sửa</button></td></tr>
+              <tr><td class="oee-td">admin.oee</td><td class="oee-td">Quản trị hệ thống</td><td class="oee-td" style="color:#5d5d60">Quản trị hệ thống</td><td class="oee-td" style="color:#5d5d60">CNTT</td><td class="oee-td" style="color:#5d5d60">Toàn hệ thống</td><td class="oee-td" style="color:#5d5d60">11/09 08:15</td><td class="oee-td"><span class="tag" style="background:#e0ebe3;color:#255a3a">Hoạt động</span></td><td class="oee-td"><button class="btn btn-ghost" style="font-size:12.5px">Sửa</button></td></tr>
+              <tr><td class="oee-td">kien.dv</td><td class="oee-td">Đỗ Văn Kiên</td><td class="oee-td" style="color:#5d5d60">Người vận hành</td><td class="oee-td" style="color:#5d5d60">Xưởng hàn A</td><td class="oee-td" style="color:#5d5d60">Phiên của bản thân</td><td class="oee-td" style="color:#5d5d60">28/08 14:40</td><td class="oee-td"><span class="tag tag-neutral">Đã khoá</span></td><td class="oee-td"><button class="btn btn-ghost" style="font-size:12.5px">Sửa</button></td></tr>
+            </tbody>
+          </table></div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isRole }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--color-divider);background:#fff">
+          <span style="font-size:12.5px;color:#5d5d60">6 vai trò chuẩn của POC · mỗi tài khoản gán đúng một vai trò</span>
+          <button class="btn btn-primary" style="margin-left:auto">+ Thêm vai trò</button>
+        </div>
+
+        <div style="border:1px solid var(--color-divider);background:#fff">
+          <div class="oee-scroll"><table style="width:100%;min-width:880px;border-collapse:collapse">
+            <thead><tr>
+              <th class="oee-th">Mã vai trò</th><th class="oee-th">Tên vai trò</th><th class="oee-th">Mô tả trách nhiệm</th>
+              <th class="oee-th">Phạm vi dữ liệu</th><th class="oee-th">Số tài khoản</th><th class="oee-th">Trạng thái</th><th class="oee-th"></th>
+            </tr></thead>
+            <tbody>
+              <tr><td class="oee-td">VT-BQL</td><td class="oee-td">Ban quản lý</td><td class="oee-td" style="color:#5d5d60">Theo dõi hiệu suất tổng thể, không can thiệp dữ liệu</td><td class="oee-td" style="color:#5d5d60">Toàn bộ · chỉ xem</td><td class="oee-td">3</td><td class="oee-td"><span class="tag" style="background:#e0ebe3;color:#255a3a">Đang dùng</span></td><td class="oee-td"><button class="btn btn-ghost" style="font-size:12.5px">Sửa</button></td></tr>
+              <tr><td class="oee-td">VT-MMTB</td><td class="oee-td">Cán bộ quản lý MMTB</td><td class="oee-td" style="color:#5d5d60">Quản lý thiết bị, QR Code, dữ liệu nền thiết bị</td><td class="oee-td" style="color:#5d5d60">Toàn bộ thiết bị POC</td><td class="oee-td">2</td><td class="oee-td"><span class="tag" style="background:#e0ebe3;color:#255a3a">Đang dùng</span></td><td class="oee-td"><button class="btn btn-ghost" style="font-size:12.5px">Sửa</button></td></tr>
+              <tr><td class="oee-td">VT-DD</td><td class="oee-td">Điều độ BPTC/BDA</td><td class="oee-td" style="color:#5d5d60">Điều phối thiết bị theo dự án, xác nhận dữ liệu ca</td><td class="oee-td" style="color:#5d5d60">Theo dự án được gán</td><td class="oee-td">4</td><td class="oee-td"><span class="tag" style="background:#e0ebe3;color:#255a3a">Đang dùng</span></td><td class="oee-td"><button class="btn btn-ghost" style="font-size:12.5px">Sửa</button></td></tr>
+              <tr><td class="oee-td">VT-TT</td><td class="oee-td">Tổ trưởng</td><td class="oee-td" style="color:#5d5d60">Xác nhận phiên làm việc, khai báo dừng máy của tổ</td><td class="oee-td" style="color:#5d5d60">Theo tổ / khu vực</td><td class="oee-td">5</td><td class="oee-td"><span class="tag" style="background:#e0ebe3;color:#255a3a">Đang dùng</span></td><td class="oee-td"><button class="btn btn-ghost" style="font-size:12.5px">Sửa</button></td></tr>
+              <tr><td class="oee-td">VT-VH</td><td class="oee-td">Người vận hành</td><td class="oee-td" style="color:#5d5d60">Check-in QR, nhập sản lượng và lý do dừng máy</td><td class="oee-td" style="color:#5d5d60">Phiên của bản thân</td><td class="oee-td">18</td><td class="oee-td"><span class="tag" style="background:#e0ebe3;color:#255a3a">Đang dùng</span></td><td class="oee-td"><button class="btn btn-ghost" style="font-size:12.5px">Sửa</button></td></tr>
+              <tr><td class="oee-td">VT-QTHT</td><td class="oee-td">Quản trị hệ thống</td><td class="oee-td" style="color:#5d5d60">Cấu hình hệ thống, tài khoản, tích hợp IoT</td><td class="oee-td" style="color:#5d5d60">Toàn hệ thống</td><td class="oee-td">2</td><td class="oee-td"><span class="tag" style="background:#e0ebe3;color:#255a3a">Đang dùng</span></td><td class="oee-td"><button class="btn btn-ghost" style="font-size:12.5px">Sửa</button></td></tr>
+            </tbody>
+          </table></div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isPerm }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--color-divider);background:#fff">
+          <span style="font-size:12.5px;color:#5d5d60">Ma trận phân quyền theo vai trò · áp dụng cho toàn bộ chức năng POC</span>
+          <button class="btn btn-secondary" style="margin-left:auto">Khôi phục mặc định</button>
+          <button class="btn btn-primary">Lưu phân quyền</button>
+        </div>
+
+        <div style="border:1px solid var(--color-divider);background:#fff">
+          <div class="oee-scroll"><table style="width:100%;min-width:900px;border-collapse:collapse">
+            <thead><tr>
+              <th class="oee-th" style="min-width:230px">Chức năng</th>
+              <th class="oee-th" style="text-align:center">Ban quản lý</th><th class="oee-th" style="text-align:center">Quản lý MMTB</th>
+              <th class="oee-th" style="text-align:center">Điều độ BPTC</th><th class="oee-th" style="text-align:center">Tổ trưởng</th>
+              <th class="oee-th" style="text-align:center">Người vận hành</th><th class="oee-th" style="text-align:center">Quản trị HT</th>
+            </tr></thead>
+            <tbody>
+              <tr><td class="oee-td">Dashboard tổng quan</td><td class="oee-td" style="text-align:center">Xem</td><td class="oee-td" style="text-align:center">Xem</td><td class="oee-td" style="text-align:center">Xem</td><td class="oee-td" style="text-align:center">Xem</td><td class="oee-td" style="text-align:center;color:#a8adb2">—</td><td class="oee-td" style="text-align:center">Xem</td></tr>
+              <tr><td class="oee-td">Theo dõi OEE/OLE</td><td class="oee-td" style="text-align:center">Xem</td><td class="oee-td" style="text-align:center">Xem</td><td class="oee-td" style="text-align:center">Xem</td><td class="oee-td" style="text-align:center">Xem</td><td class="oee-td" style="text-align:center;color:#a8adb2">—</td><td class="oee-td" style="text-align:center">Xem</td></tr>
+              <tr><td class="oee-td">Giám sát dữ liệu vận hành</td><td class="oee-td" style="text-align:center">Xem</td><td class="oee-td" style="text-align:center">Xem</td><td class="oee-td" style="text-align:center">Xem</td><td class="oee-td" style="text-align:center">Xem</td><td class="oee-td" style="text-align:center;color:#a8adb2">—</td><td class="oee-td" style="text-align:center">Xem</td></tr>
+              <tr><td class="oee-td">Khai báo dừng máy &amp; sản lượng</td><td class="oee-td" style="text-align:center;color:#a8adb2">—</td><td class="oee-td" style="text-align:center;color:#a8adb2">—</td><td class="oee-td" style="text-align:center">Xem</td><td class="oee-td" style="text-align:center">Xem</td><td class="oee-td" style="text-align:center">Nhập</td><td class="oee-td" style="text-align:center">Toàn quyền</td></tr>
+              <tr><td class="oee-td">Xác nhận &amp; đối soát dữ liệu</td><td class="oee-td" style="text-align:center">Xem</td><td class="oee-td" style="text-align:center">Xem</td><td class="oee-td" style="text-align:center">Xác nhận</td><td class="oee-td" style="text-align:center">Xác nhận</td><td class="oee-td" style="text-align:center;color:#a8adb2">—</td><td class="oee-td" style="text-align:center">Toàn quyền</td></tr>
+              <tr><td class="oee-td">Báo cáo &amp; xuất dữ liệu</td><td class="oee-td" style="text-align:center">Xem</td><td class="oee-td" style="text-align:center">Xuất</td><td class="oee-td" style="text-align:center">Xuất</td><td class="oee-td" style="text-align:center">Xem</td><td class="oee-td" style="text-align:center;color:#a8adb2">—</td><td class="oee-td" style="text-align:center">Toàn quyền</td></tr>
+              <tr><td class="oee-td">Quản lý thiết bị &amp; QR Code</td><td class="oee-td" style="text-align:center;color:#a8adb2">—</td><td class="oee-td" style="text-align:center">Sửa</td><td class="oee-td" style="text-align:center;color:#a8adb2">—</td><td class="oee-td" style="text-align:center;color:#a8adb2">—</td><td class="oee-td" style="text-align:center;color:#a8adb2">—</td><td class="oee-td" style="text-align:center">Toàn quyền</td></tr>
+              <tr><td class="oee-td">Quản lý dữ liệu nền &amp; import Excel</td><td class="oee-td" style="text-align:center;color:#a8adb2">—</td><td class="oee-td" style="text-align:center">Xem</td><td class="oee-td" style="text-align:center;color:#a8adb2">—</td><td class="oee-td" style="text-align:center;color:#a8adb2">—</td><td class="oee-td" style="text-align:center;color:#a8adb2">—</td><td class="oee-td" style="text-align:center">Toàn quyền</td></tr>
+              <tr><td class="oee-td">Quản lý tài khoản &amp; phân quyền</td><td class="oee-td" style="text-align:center;color:#a8adb2">—</td><td class="oee-td" style="text-align:center;color:#a8adb2">—</td><td class="oee-td" style="text-align:center;color:#a8adb2">—</td><td class="oee-td" style="text-align:center;color:#a8adb2">—</td><td class="oee-td" style="text-align:center;color:#a8adb2">—</td><td class="oee-td" style="text-align:center">Toàn quyền</td></tr>
+            </tbody>
+          </table></div>
+        </div>
+
+        <div style="padding:12px 13px;border:1px solid var(--color-divider);background:#fff;font-size:12.5px;color:#5d5d60;line-height:1.6">
+          Nguyên tắc phân tách OT/IT: tài khoản vận hành hiện trường chỉ truy cập dữ liệu phiên của chính mình; dữ liệu IoT thô chỉ do quản trị hệ thống và dịch vụ tích hợp truy xuất.
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isAudit }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--color-divider);background:#fff">
+          <div style="position:relative">
+            <svg style="position:absolute;left:8px;top:9px" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#76797b" strokeWidth="1.5"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+            <input class="input" style="width:210px;height:34px;padding-left:27px;background:#fff" placeholder="Tìm tài khoản hoặc đối tượng…">
+          </div>
+          <select class="input" style="width:190px;height:34px"><option>Tất cả loại hành động</option><option>Đăng nhập</option><option>Thay đổi dữ liệu nền</option><option>Phân quyền</option><option>Xuất dữ liệu</option></select>
+          <input class="input" type="date" style="width:150px;height:34px" value="2026-09-11">
+          <button class="btn btn-secondary" style="margin-left:auto">Xuất nhật ký</button>
+        </div>
+
+        <div style="border:1px solid var(--color-divider);background:#fff">
+          <div class="oee-scroll"><table style="width:100%;min-width:880px;border-collapse:collapse">
+            <thead><tr>
+              <th class="oee-th" style="width:120px">Thời gian</th><th class="oee-th">Tài khoản</th><th class="oee-th">Hành động</th>
+              <th class="oee-th">Đối tượng</th><th class="oee-th">Địa chỉ IP</th><th class="oee-th">Kết quả</th>
+            </tr></thead>
+            <tbody>
+              <tr><td class="oee-td">11/09 08:15</td><td class="oee-td">admin.oee</td><td class="oee-td" style="color:#5d5d60">Cập nhật phân quyền vai trò</td><td class="oee-td" style="color:#5d5d60">VT-TT · Tổ trưởng</td><td class="oee-td" style="color:#5d5d60">10.8.12.4</td><td class="oee-td"><span class="tag" style="background:#e0ebe3;color:#255a3a">Thành công</span></td></tr>
+              <tr><td class="oee-td">11/09 07:41</td><td class="oee-td">hai.nv</td><td class="oee-td" style="color:#5d5d60">Sửa danh mục nhóm thiết bị</td><td class="oee-td" style="color:#5d5d60">NH-CUT · Máy cắt plasma</td><td class="oee-td" style="color:#5d5d60">10.8.12.31</td><td class="oee-td"><span class="tag" style="background:#e0ebe3;color:#255a3a">Thành công</span></td></tr>
+              <tr><td class="oee-td">11/09 07:02</td><td class="oee-td">hai.nv</td><td class="oee-td" style="color:#5d5d60">Đăng nhập hệ thống</td><td class="oee-td" style="color:#5d5d60">—</td><td class="oee-td" style="color:#5d5d60">10.8.12.31</td><td class="oee-td"><span class="tag" style="background:#e0ebe3;color:#255a3a">Thành công</span></td></tr>
+              <tr><td class="oee-td">11/09 06:58</td><td class="oee-td">kien.dv</td><td class="oee-td" style="color:#5d5d60">Đăng nhập hệ thống</td><td class="oee-td" style="color:#5d5d60">—</td><td class="oee-td" style="color:#5d5d60">10.8.20.77</td><td class="oee-td"><span class="tag" style="background:#f1ded6;color:#7d3418">Thất bại · tài khoản khoá</span></td></tr>
+              <tr><td class="oee-td">10/09 17:22</td><td class="oee-td">tu.lm</td><td class="oee-td" style="color:#5d5d60">Xuất báo cáo hiệu suất tháng</td><td class="oee-td" style="color:#5d5d60">BC-OEE-092026.xlsx</td><td class="oee-td" style="color:#5d5d60">10.8.4.9</td><td class="oee-td"><span class="tag" style="background:#e0ebe3;color:#255a3a">Thành công</span></td></tr>
+              <tr><td class="oee-td">10/09 15:05</td><td class="oee-td">admin.oee</td><td class="oee-td" style="color:#5d5d60">Khoá tài khoản</td><td class="oee-td" style="color:#5d5d60">kien.dv</td><td class="oee-td" style="color:#5d5d60">10.8.12.4</td><td class="oee-td"><span class="tag" style="background:#e0ebe3;color:#255a3a">Thành công</span></td></tr>
+              <tr><td class="oee-td">09/09 10:12</td><td class="oee-td">hai.nv</td><td class="oee-td" style="color:#5d5d60">Nạp dữ liệu nền từ Excel</td><td class="oee-td" style="color:#5d5d60">master-data-nhan-su-0909.xlsx · 24 dòng</td><td class="oee-td" style="color:#5d5d60">10.8.12.31</td><td class="oee-td"><span class="tag" style="background:#e0ebe3;color:#255a3a">Thành công</span></td></tr>
+            </tbody>
+          </table></div>
+        </div>
+      </sc-if>
+
+    </div>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;detailMode&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Popup&quot;,&quot;Bảng cạnh danh sách&quot;],&quot;default&quot;:&quot;Popup&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Quản lý thiết bị&quot;},&quot;showQr&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Quản lý thiết bị&quot;},&quot;bulkQrPrint&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Quản lý thiết bị&quot;},&quot;reportEmptyState&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Báo cáo&quot;}}">
+const S = {
+  run:   {label:'Đang hoạt động', fg:'#255a3a', bg:'#e0ebe3', dot:'#3d8a5b', dash:'0'},
+  stop:  {label:'Đang dừng',      fg:'#48484a', bg:'#e4e4e6', dot:'#98989b', dash:'0'},
+  error: {label:'Lỗi / bất thường',fg:'#7d3418', bg:'#f1ded6', dot:'#b4552d', dash:'0'},
+  off:   {label:'Mất kết nối',    fg:'#2c455d', bg:'#e4e7ea', dot:'#7a7a7d', dash:'4 3'}
+};
+const ICON = {
+  weld: '<path d="M3 13 11 3l3 3-6 8-5-1Z" fill="none" stroke="#1d1f20" stroke-width="1.3"/><path d="M9 12l4 3" stroke="#1d1f20" stroke-width="1.3"/>',
+  comp: '<circle cx="8" cy="8" r="6" fill="none" stroke="#1d1f20" stroke-width="1.3"/><path d="M8 8 11 5" stroke="#1d1f20" stroke-width="1.3"/><path d="M8 2v1M14 8h-1M8 14v-1M2 8h1" stroke="#1d1f20" stroke-width="1.1"/>',
+  crane:'<path d="M1 12h9v-2H1zM10 11l4-2v3z" fill="none" stroke="#1d1f20" stroke-width="1.3"/><circle cx="4" cy="13.5" r="1.5" fill="none" stroke="#1d1f20" stroke-width="1.2"/><circle cx="11" cy="13.5" r="1.5" fill="none" stroke="#1d1f20" stroke-width="1.2"/><path d="M3 10V3h8" stroke="#1d1f20" stroke-width="1.2" fill="none"/>'
+};
+const DEV = [
+  {id:'WLD-A-0142',name:'Máy hàn Lincoln 500A',type:'weld',typeLabel:'Máy hàn',area:'Xưởng hàn A · Bay 3',project:'Block A-04',operator:'Trần Quốc Minh',status:'run',conn:'on',oee:'78,4',last:'12 giây trước',run:'6h 12p',stop:'1h 04p',x:150,y:120,
+   summary:'I 218 A · U 26,4 V · hồ quang 4h 38p',
+   params:[{k:'Dòng hàn',v:'218 A'},{k:'Áp hàn',v:'26,4 V'},{k:'Giờ hồ quang',v:'4h 38p'},{k:'Nhiệt độ',v:'62 °C'}],
+   chartLabel:'Dòng hàn theo thời gian (A)',
+   spark:'0,70 30,52 60,58 90,34 120,40 150,88 180,46 210,38 240,56 270,30 300,44 330,36 360,42',
+   timeline:[['run',34],['idle',8],['stop',12],['run',26],['err',4],['run',16]],
+   log:[['14:32','Hồ quang bật','218 A'],['14:21','Hồ quang tắt','—'],['13:58','Đổi que hàn','ghi chú thợ'],['13:40','Hồ quang bật','214 A']]},
+  {id:'WLD-B-0217',name:'Máy hàn Miller 400A',type:'weld',typeLabel:'Máy hàn',area:'Xưởng hàn B · Bay 1',project:'Jacket LQ-02',operator:'Lê Hoàng Nam',status:'stop',conn:'on',oee:'54,7',last:'46 phút trước',run:'3h 20p',stop:'2h 46p',x:150,y:290,
+   summary:'Dừng chờ vật tư · 46 phút',
+   params:[{k:'Dòng hàn',v:'0 A'},{k:'Áp hàn',v:'0 V'},{k:'Giờ hồ quang',v:'2h 51p'},{k:'Nhiệt độ',v:'38 °C'}],
+   chartLabel:'Dòng hàn theo thời gian (A)',
+   spark:'0,52 30,48 60,60 90,44 120,50 150,46 180,58 210,102 240,102 270,102 300,102 330,102 360,102',
+   timeline:[['run',28],['stop',14],['run',22],['stop',36]],
+   log:[['14:26','Khai báo dừng máy','chờ vật tư'],['14:24','Hồ quang tắt','—'],['13:10','Hồ quang bật','196 A'],['12:02','Check-in phiên','QR Code']]},
+  {id:'CMP-A-0331',name:'Máy nén khí Atlas Copco GA55',type:'comp',typeLabel:'Máy nén khí',area:'Trạm khí A',project:'Dùng chung xưởng',operator:'Không gán',status:'run',conn:'on',oee:'81,2',last:'34 giây trước',run:'7h 48p',stop:'0h 22p',x:395,y:100,
+   summary:'7,1 bar · 42,8 kWh · tải 68%',
+   params:[{k:'Áp suất',v:'7,1 bar'},{k:'Điện năng',v:'42,8 kWh'},{k:'Tỷ lệ tải',v:'68%'},{k:'Nhiệt độ',v:'74 °C'}],
+   chartLabel:'Áp suất đầu ra (bar)',
+   spark:'0,40 30,38 60,44 90,36 120,42 150,38 180,46 210,40 240,36 270,44 300,38 330,42 360,40',
+   timeline:[['run',62],['idle',10],['run',24],['stop',4]],
+   log:[['14:31','Ghi nhận điện năng','42,8 kWh'],['14:12','Chu kỳ tải','68%'],['13:40','Áp suất ổn định','7,2 bar'],['12:58','Ghi nhận điện năng','38,1 kWh']]},
+  {id:'CMP-B-0348',name:'Máy nén khí Kaeser BSD75',type:'comp',typeLabel:'Máy nén khí',area:'Trạm khí B',project:'Dùng chung xưởng',operator:'Không gán',status:'error',conn:'on',oee:'46,3',last:'1 phút trước',run:'4h 02p',stop:'3h 18p',x:395,y:230,
+   summary:'5,9 bar — dưới ngưỡng 6,5 bar',
+   params:[{k:'Áp suất',v:'5,9 bar'},{k:'Điện năng',v:'51,4 kWh'},{k:'Tỷ lệ tải',v:'94%'},{k:'Nhiệt độ',v:'88 °C'}],
+   chartLabel:'Áp suất đầu ra (bar)',
+   spark:'0,38 30,40 60,36 90,42 120,48 150,54 180,62 210,70 240,76 270,82 300,86 330,90 360,92',
+   timeline:[['run',40],['err',18],['run',12],['err',16],['stop',14]],
+   log:[['14:31','Cảnh báo áp suất','5,9 bar'],['14:02','Áp suất giảm','6,3 bar'],['13:15','Tải cao liên tục','94%'],['11:40','Ghi nhận điện năng','51,4 kWh']]},
+  {id:'TRC-01-7742',name:'Xe tải cẩu Kato 25T',type:'crane',typeLabel:'Xe tải cẩu',area:'Bãi lắp ráp · Yard 2',project:'Block A-04',operator:'Phạm Văn Đức',status:'run',conn:'on',oee:'69,5',last:'8 giây trước',run:'5h 06p',stop:'1h 52p',x:700,y:170,
+   summary:'GPS trực tuyến · 14 chu kỳ cẩu · 12,4 T',
+   params:[{k:'Chu kỳ cẩu',v:'14'},{k:'Giờ nổ máy',v:'6h 58p'},{k:'Giờ cẩu',v:'3h 12p'},{k:'Tải lớn nhất',v:'12,4 T'}],
+   chartLabel:'Hoạt động cẩu theo giờ',
+   spark:'0,88 30,60 60,72 90,44 120,56 150,38 180,64 210,50 240,42 270,68 300,46 330,58 360,50',
+   timeline:[['run',22],['idle',16],['run',18],['idle',10],['run',20],['stop',14]],
+   log:[['14:30','Kết thúc chu kỳ cẩu','6p 12s · 12,4 T'],['14:18','Bắt đầu di chuyển','GPS'],['13:52','Nổ máy chờ','18 phút'],['13:10','Kết thúc chu kỳ cẩu','5p 40s']]},
+  {id:'TRC-02-7815',name:'Xe tải cẩu Tadano 30T',type:'crane',typeLabel:'Xe tải cẩu',area:'Cầu cảng số 1',project:'Jacket LQ-02',operator:'Nguyễn Bá Tuấn',status:'off',conn:'off',oee:'—',last:'27 phút trước',run:'2h 44p',stop:'—',x:720,y:448,
+   summary:'Mất kết nối từ 14:05 · dữ liệu cuối 2h 44p',
+   params:[{k:'Chu kỳ cẩu',v:'6'},{k:'Giờ nổ máy',v:'3h 10p'},{k:'Giờ cẩu',v:'1h 28p'},{k:'Tải lớn nhất',v:'21,0 T'}],
+   chartLabel:'Hoạt động cẩu theo giờ',
+   spark:'0,64 30,58 60,70 90,52 120,60 150,48 180,66 210,102 240,102 270,102 300,102 330,102 360,102',
+   timeline:[['run',24],['idle',12],['run',14],['off',50]],
+   log:[['14:05','Mất kết nối','gói tin cuối'],['13:58','Chu kỳ cẩu','7p 05s'],['13:20','Nổ máy chờ','22 phút'],['12:40','Check-in phiên','QR Code']]}
+];
+const TLC = {run:'#5980a6', idle:'#b5cade', stop:'#d4d4d7', err:'#b4552d', off:'#e7e7ea'};
+const MGMT = {devweld:{type:'weld',label:'máy hàn'}, devcomp:{type:'comp',label:'máy nén khí'}, devcrane:{type:'crane',label:'xe tải cẩu'}};
+const NODE = {'WLD-A-0142':'N-114','WLD-B-0217':'N-117','CMP-A-0331':'N-203','CMP-B-0348':'N-208','TRC-01-7742':'N-301','TRC-02-7815':'N-305'};
+const SESS = [
+  {id:'S-2041',op:'Trần Quốc Minh',role:'Thợ hàn bậc 5',dev:'WLD-A-0142',in:'11/09 06:12',out:'Đang mở',sys:'6,20 h',man:'—',d:null,state:'Đang vận hành',
+   output:'12,4 m mối hàn',reason:'—',note:'Ca sáng, chưa kết thúc phiên',photo:'Chưa có',
+   rows:[['Giờ chạy máy','6,20 h','—','—'],['Giờ hồ quang','4,63 h','—','—'],['Số lần dừng','3','—','—']]},
+  {id:'S-2038',op:'Lê Hoàng Nam',role:'Thợ hàn bậc 4',dev:'WLD-B-0217',in:'11/09 06:05',out:'11/09 14:24',sys:'8,32 h',man:'8,00 h',d:3.8,state:'Chờ xác nhận',
+   output:'9,8 m mối hàn',reason:'Chờ vật tư (46 phút)',note:'Máy dừng do thiếu que hàn, đã báo tổ trưởng',photo:'02 ảnh',
+   rows:[['Giờ chạy máy','8,32 h','8,00 h','3,8%'],['Giờ hồ quang','2,85 h','3,00 h','5,3%'],['Số lần dừng','5','4','1']]},
+  {id:'S-2036',op:'Phạm Văn Đức',role:'Lái xe cẩu',dev:'TRC-01-7742',in:'11/09 06:00',out:'Đang mở',sys:'6,98 h',man:'—',d:null,state:'Đang vận hành',
+   output:'14 chu kỳ cẩu',reason:'—',note:'Phục vụ Block A-04',photo:'Chưa có',
+   rows:[['Giờ nổ máy','6,98 h','—','—'],['Giờ cẩu','3,20 h','—','—'],['Km di chuyển','18,4','—','—']]},
+  {id:'S-2033',op:'Nguyễn Bá Tuấn',role:'Lái xe cẩu',dev:'TRC-02-7815',in:'11/09 05:50',out:'11/09 14:05',sys:'2,73 h',man:'8,00 h',d:65.9,state:'Lệch vượt ngưỡng',
+   output:'6 chu kỳ cẩu',reason:'Mất kết nối thiết bị IoT',note:'Thiết bị mất tín hiệu từ 14:05, cần đối soát thủ công',photo:'01 ảnh',
+   rows:[['Giờ nổ máy','2,73 h','8,00 h','65,9%'],['Giờ cẩu','1,47 h','4,50 h','67,3%'],['Km di chuyển','9,1','24,0','62,1%']]},
+  {id:'S-2030',op:'Trần Quốc Minh',role:'Thợ hàn bậc 5',dev:'WLD-A-0142',in:'10/09 06:08',out:'10/09 14:30',sys:'8,37 h',man:'8,25 h',d:1.4,state:'Đã xác nhận',
+   output:'13,1 m mối hàn',reason:'Bảo trì định kỳ (25 phút)',note:'Đã đối soát với sổ ca',photo:'03 ảnh',
+   rows:[['Giờ chạy máy','8,37 h','8,25 h','1,4%'],['Giờ hồ quang','5,02 h','5,00 h','0,4%'],['Số lần dừng','2','2','0']]},
+  {id:'S-2028',op:'Võ Thanh Sơn',role:'Thợ vận hành',dev:'CMP-A-0331',in:'10/09 06:00',out:'10/09 18:00',sys:'11,86 h',man:'12,00 h',d:1.2,state:'Đã xác nhận',
+   output:'—',reason:'—',note:'Máy chạy liên tục cả ca',photo:'Chưa có',
+   rows:[['Giờ chạy máy','11,86 h','12,00 h','1,2%'],['Điện năng','86,4 kWh','—','—'],['Số lần dừng','1','1','0']]},
+  {id:'S-2025',op:'Lê Hoàng Nam',role:'Thợ hàn bậc 4',dev:'WLD-B-0217',in:'09/09 06:02',out:'09/09 14:10',sys:'8,13 h',man:'7,50 h',d:7.7,state:'Chờ xác nhận',
+   output:'8,2 m mối hàn',reason:'Sự cố nguồn điện (35 phút)',note:'Thợ nhập thiếu giờ chờ, cần rà soát',photo:'01 ảnh',
+   rows:[['Giờ chạy máy','8,13 h','7,50 h','7,7%'],['Giờ hồ quang','2,44 h','2,80 h','12,9%'],['Số lần dừng','4','3','1']]},
+  {id:'S-2021',op:'Phạm Văn Đức',role:'Lái xe cẩu',dev:'TRC-01-7742',in:'09/09 06:00',out:'09/09 16:40',sys:'10,66 h',man:'10,50 h',d:1.5,state:'Đã xác nhận',
+   output:'21 chu kỳ cẩu',reason:'Nghỉ giữa ca',note:'Khớp sổ điều độ',photo:'02 ảnh',
+   rows:[['Giờ nổ máy','10,66 h','10,50 h','1,5%'],['Giờ cẩu','5,10 h','5,00 h','2,0%'],['Km di chuyển','31,2','30,0','4,0%']]}
+];
+const SESS_BADGE = {
+  'Đang vận hành': S.run, 'Chờ xác nhận': {fg:'#6a4f13', bg:'#eee6d4'},
+  'Lệch vượt ngưỡng': S.error, 'Đã xác nhận': {fg:'#2c455d', bg:'#dfe8f1'}
+};
+const UTIL = [
+  {id:'WLD-A-0142', note:'6h12 / 1h04 / 0h44', p:[62,18,20]},
+  {id:'WLD-B-0217', note:'3h20 / 0h54 / 2h46', p:[44,12,44]},
+  {id:'CMP-A-0331', note:'7h48 / 0h12 / 0h22', p:[88,5,7]},
+  {id:'CMP-B-0348', note:'4h02 / 0h40 / 3h18', p:[50,9,41]},
+  {id:'TRC-01-7742',note:'5h06 / 1h52 / 0h32', p:[66,24,10]},
+  {id:'TRC-02-7815',note:'2h44 / 0h26 / mất KN', p:[36,8,56]}
+];
+
+const I = (p) => ({__html: p});
+const GROUPS = [
+  ['g1','Dashboard','<rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/>',
+    [['dash','Dashboard tổng quan'],['oee','Theo dõi OEE/OLE'],['kpi','Theo dõi KPI POC'],['chart','Biểu đồ hiệu suất']]],
+  ['g2','Giám sát vận hành thiết bị','<path d="M3 12h4l3 7 4-14 3 7h4"/>',
+    [['mon','Giám sát dữ liệu vận hành'],['devstatus','Trạng thái thiết bị'],['conn','Kết nối & chất lượng dữ liệu IoT']]],
+  ['g3','Theo dõi người vận hành','<circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0M16 6h5M16 10h5M16 14h3"/>',
+    [['op','Phiên sử dụng & đối soát'],['confirm','Xác nhận dữ liệu thực tế']]],
+  ['g4','Báo cáo','<path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/>',
+    [['rptops','Báo cáo vận hành & hiệu suất'],['rptrec','Báo cáo đối soát & chi phí']]],
+  ['g5','Quản lý thiết bị','<path d="m12 3 8 4.5v9L12 21l-8-4.5v-9z"/><path d="m12 12 8-4.5M12 12v9M12 12 4 7.5"/>',
+    [['devweld','Máy hàn'],['devcomp','Máy nén khí'],['devcrane','Xe tải cẩu']]],
+  ['g6','Quản lý danh mục','<ellipse cx="12" cy="5.5" rx="8" ry="3"/><path d="M4 5.5v13c0 1.7 3.6 3 8 3s8-1.3 8-3v-13M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/>',
+    [['msOper','Nhân sự vận hành'],['msDev','Danh mục thiết bị'],['msProj','Dự án'],['msArea','Khu vực & xưởng'],['msShift','Ca làm việc'],['msStop','Lý do dừng máy'],['excel','Nạp dữ liệu từ Excel']]],
+  ['g7','Quản lý tài khoản & phân quyền','<path d="M12 3 5 6v5c0 4.4 3 8.5 7 10 4-1.5 7-5.6 7-10V6z"/><path d="m9 12 2 2 4-4"/>',
+    [['account','Tài khoản người dùng'],['role','Vai trò & nhóm quyền'],['perm','Ma trận phân quyền'],['audit','Nhật ký hoạt động']]]
+];
+
+const MS = {
+  msOper:{title:'Nhân sự vận hành', add:'+ Thêm nhân sự', search:'Tìm theo mã hoặc tên nhân sự…', total:24,
+    cols:['Mã nhân sự','Họ tên','Vai trò','Bộ phận','Bậc thợ','Trạng thái','Cập nhật'],
+    rows:[
+      ['NS-1042','Trần Quốc Minh',['g','Thợ hàn'],['g','Xưởng hàn A'],'5/7',['ok','Đang làm việc'],['g','02/09/2026']],
+      ['NS-1078','Lê Hoàng Nam',['g','Thợ hàn'],['g','Xưởng hàn B'],'4/7',['ok','Đang làm việc'],['g','02/09/2026']],
+      ['NS-1131','Phạm Văn Đức',['g','Lái xe cẩu'],['g','Điều độ BPTC'],'—',['ok','Đang làm việc'],['g','03/09/2026']],
+      ['NS-1156','Nguyễn Bá Tuấn',['g','Lái xe cẩu'],['g','Điều độ BPTC'],'—',['ok','Đang làm việc'],['g','03/09/2026']],
+      ['NS-1189','Võ Thanh Sơn',['g','Thợ vận hành'],['g','Trạm khí'],'3/7',['ok','Đang làm việc'],['g','05/09/2026']],
+      ['NS-0974','Đỗ Văn Kiên',['g','Thợ hàn'],['g','Xưởng hàn A'],'6/7',['n','Ngừng theo dõi'],['g','28/08/2026']]
+    ]},
+  msDev:{title:'Danh mục thiết bị', add:'+ Thêm nhóm thiết bị', search:'Tìm nhóm hoặc mã thiết bị…', total:18,
+    cols:['Mã nhóm','Nhóm thiết bị','Số thiết bị','Đơn vị sản lượng','Chu kỳ chuẩn','Trạng thái','Cập nhật'],
+    rows:[
+      ['NH-WLD','Máy hàn hồ quang','12',['g','mét mối hàn'],'0,85 m/phút',['ok','Đang áp dụng'],['g','01/09/2026']],
+      ['NH-CMP','Máy nén khí','6',['g','m³ khí nén'],'42 m³/giờ',['ok','Đang áp dụng'],['g','01/09/2026']],
+      ['NH-TRC','Xe tải cẩu','5',['g','lượt nâng hạ'],'8 lượt/giờ',['ok','Đang áp dụng'],['g','04/09/2026']],
+      ['NH-CUT','Máy cắt plasma','3',['g','mét đường cắt'],'1,20 m/phút',['w','Chờ duyệt'],['g','08/09/2026']],
+      ['NH-GEN','Máy phát điện','2',['g','giờ vận hành'],'—',['n','Ngoài phạm vi POC'],['g','20/08/2026']]
+    ]},
+  msProj:{title:'Dự án', add:'+ Thêm dự án', search:'Tìm mã hoặc tên dự án…', total:9,
+    cols:['Mã dự án','Tên dự án','Chủ đầu tư','Bắt đầu','Kết thúc dự kiến','Trạng thái','Cập nhật'],
+    rows:[
+      ['DA-2601','Chế tạo Block A-04',['g','PVN Offshore'],'12/01/2026','30/11/2026',['ok','Đang triển khai'],['g','09/09/2026']],
+      ['DA-2603','Jacket WHP-7',['g','Vietsovpetro'],'03/03/2026','28/02/2027',['ok','Đang triển khai'],['g','07/09/2026']],
+      ['DA-2588','Sửa chữa giàn CPP-2',['g','PTSC M&C'],'05/11/2025','15/09/2026',['w','Sắp kết thúc'],['g','05/09/2026']],
+      ['DA-2610','Kết cấu điện gió ngoài khơi',['g','Ørsted VN'],'01/10/2026','—',['n','Chưa khởi công'],['g','02/09/2026']]
+    ]},
+  msArea:{title:'Khu vực & xưởng', add:'+ Thêm khu vực', search:'Tìm khu vực, xưởng…', total:11,
+    cols:['Mã khu vực','Tên khu vực / xưởng','Loại','Số thiết bị','Phụ trách','Trạng thái','Cập nhật'],
+    rows:[
+      ['KV-A','Xưởng hàn A',['g','Xưởng kín'],'8',['g','Võ Thanh Sơn'],['ok','Đang hoạt động'],['g','01/09/2026']],
+      ['KV-B','Xưởng hàn B',['g','Xưởng kín'],'6',['g','Lê Hoàng Nam'],['ok','Đang hoạt động'],['g','01/09/2026']],
+      ['KV-C','Bãi lắp ráp C',['g','Bãi ngoài trời'],'5',['g','Phạm Văn Đức'],['ok','Đang hoạt động'],['g','03/09/2026']],
+      ['KV-K','Trạm khí',['g','Trạm kỹ thuật'],'4',['g','Võ Thanh Sơn'],['ok','Đang hoạt động'],['g','05/09/2026']],
+      ['KV-D','Bãi hạ thuỷ',['g','Bãi ngoài trời'],'2',['w','Chưa gán IoT'],['n','Ngoài phạm vi POC'],['g','22/08/2026']]
+    ]},
+  msShift:{title:'Ca làm việc', add:'+ Thêm ca', search:'Tìm ca làm việc…', total:5,
+    cols:['Mã ca','Tên ca','Bắt đầu','Kết thúc','Thời lượng','Nghỉ giữa ca','Áp dụng cho','Trạng thái'],
+    rows:[
+      ['CA-1','Ca 1 — Sáng','06:00','14:00','8 giờ','45 phút',['g','Toàn bộ xưởng'],['ok','Đang áp dụng']],
+      ['CA-2','Ca 2 — Chiều','14:00','22:00','8 giờ','45 phút',['g','Toàn bộ xưởng'],['ok','Đang áp dụng']],
+      ['CA-3','Ca 3 — Đêm','22:00','06:00','8 giờ','60 phút',['g','Xưởng hàn A, Trạm khí'],['ok','Đang áp dụng']],
+      ['CA-HC','Hành chính','07:30','16:30','8 giờ','60 phút',['g','Khối văn phòng'],['ok','Đang áp dụng']],
+      ['CA-OT','Tăng ca cuối tuần','07:00','17:00','9 giờ','60 phút',['g','Theo kế hoạch dự án'],['w','Áp dụng theo đợt']]
+    ]},
+  msStop:{title:'Lý do dừng máy', add:'+ Thêm lý do', search:'Tìm lý do dừng máy…', total:16,
+    cols:['Mã lý do','Lý do dừng máy','Nhóm','Tính vào OEE','Ngưỡng cảnh báo','Trạng thái','Cập nhật'],
+    rows:[
+      ['LD-01','Hỏng thiết bị',['g','Dừng ngoài kế hoạch'],'Có — Availability','> 15 phút',['ok','Đang áp dụng'],['g','01/09/2026']],
+      ['LD-02','Chờ vật tư',['g','Dừng ngoài kế hoạch'],'Có — Availability','> 30 phút',['ok','Đang áp dụng'],['g','01/09/2026']],
+      ['LD-03','Chờ cẩu / nâng hạ',['g','Dừng ngoài kế hoạch'],'Có — Availability','> 20 phút',['ok','Đang áp dụng'],['g','04/09/2026']],
+      ['LD-04','Bảo dưỡng định kỳ',['g','Dừng theo kế hoạch'],'Không',['g','—'],['ok','Đang áp dụng'],['g','01/09/2026']],
+      ['LD-05','Nghỉ giữa ca',['g','Dừng theo kế hoạch'],'Không',['g','—'],['ok','Đang áp dụng'],['g','01/09/2026']],
+      ['LD-06','Mất kết nối IoT',['g','Sự cố dữ liệu'],'Loại trừ khi đối soát','> 60 giây',['w','Đang rà soát'],['g','10/09/2026']]
+    ]}
+};
+
+const SIDE_SUB = ['g5','g6','g7'];
+
+const R = (l,a) => ({label:l, align:a?'right':'left'});
+const ST_ = {ok:'background:#e0ebe3;color:#255a3a', w:'background:#f2e6d2;color:#6a4f13', b:'background:#f1ded6;color:#7d3418', n:'background:#eceded;color:#5d5d60'};
+
+const RPT = {
+  rptops: {
+    objLabel: {'Theo thiết bị':'Thiết bị','Theo thợ hàn':'Thợ hàn','Theo dự án':'Dự án','Hiệu suất thiết bị':'Thiết bị'},
+    types: {
+      'Theo thiết bị': {
+        filters:['group','object','project'],
+        kpis:[['Tổng giờ vận hành','251,9','h'],['Hoạt động thực tế','183,2','h'],['Hiệu suất bình quân','72,6%','',' Trọng số theo giờ máy'],['Số phiên vận hành','78','']],
+        cols:[R('Thiết bị'),R('Nhóm'),R('Dự án'),R('Giờ vận hành',1),R('Hoạt động thực tế',1),R('Số phiên',1),R('Hiệu suất',1)],
+        rows:[
+          ['WLD-A-0142',['m','Máy hàn'],['m','Block A-04'],[1,'48,3 h'],[1,'40,6 h'],[1,'14'],[1,'78,4%']],
+          ['WLD-B-0217',['m','Máy hàn'],['m','Jacket LQ-02'],[1,'36,4 h'],[1,'19,9 h'],[1,'13'],[1,'54,7%']],
+          ['CMP-A-0331',['m','Máy nén khí'],['m','Dùng chung'],[1,'76,1 h'],[1,'61,8 h'],[1,'11'],[1,'81,2%']],
+          ['CMP-B-0348',['m','Máy nén khí'],['m','Dùng chung'],[1,'48,2 h'],[1,'22,3 h'],[1,'11'],[1,'46,3%']],
+          ['TRC-01-7742',['m','Xe tải cẩu'],['m','Block A-04'],[1,'42,9 h'],[1,'29,8 h'],[1,'17'],[1,'69,5%']],
+          ['TRC-02-7815',['m','Xe tải cẩu'],['m','Jacket LQ-02'],[1,'26,4 h'],[1,'8,8 h'],[1,'12'],[1,'—','n']]
+        ],
+        total:['Tổng cộng','','',[1,'251,9 h'],[1,'183,2 h'],[1,'78'],[1,'72,6%']]
+      },
+      'Theo thợ hàn': {
+        filters:['object','project'],
+        kpis:[['Số giờ sử dụng máy','84,7','h'],['Tổng Arc-on','52,4','h'],['Sản lượng mối hàn','228,5','m'],['Số phiên / thiết bị','27 / 2','']],
+        cols:[R('Thợ hàn'),R('Bộ phận'),R('Giờ sử dụng máy',1),R('Arc-on',1),R('Tỷ lệ Arc-on',1),R('Sản lượng',1),R('Số phiên',1)],
+        rows:[
+          ['Trần Quốc Minh',['m','Xưởng hàn A'],[1,'48,3 h'],[1,'31,8 h'],[1,'65,8%'],[1,'132,4 m'],[1,'14']],
+          ['Lê Hoàng Nam',['m','Xưởng hàn B'],[1,'36,4 h'],[1,'20,6 h'],[1,'56,6%'],[1,'96,1 m'],[1,'13']],
+          ['Đỗ Văn Kiên',['m','Xưởng hàn A'],[1,'—','n'],[1,'—','n'],[1,'—','n'],[1,'—','n'],[1,'0']]
+        ],
+        total:['Tổng cộng','',[1,'84,7 h'],[1,'52,4 h'],[1,'61,9%'],[1,'228,5 m'],[1,'27']]
+      },
+      'Theo dự án': {
+        filters:['project'],
+        kpis:[['Tổng giờ máy','278,3','h'],['Số thiết bị tham gia','6',''],['Số phiên vận hành','78',''],['Hiệu suất bình quân','72,6%','']],
+        cols:[R('Dự án'),R('Chủ đầu tư'),R('Số thiết bị',1),R('Giờ máy',1),R('Số phiên',1),R('Hiệu suất',1)],
+        rows:[
+          ['Block A-04',['m','PVN Offshore'],[1,'3'],[1,'139,5 h'],[1,'38'],[1,'75,1%']],
+          ['Jacket LQ-02',['m','Vietsovpetro'],[1,'2'],[1,'62,8 h'],[1,'25'],[1,'54,7%']],
+          ['Dùng chung',['m','PTSC M&C'],[1,'2'],[1,'76,0 h'],[1,'15'],[1,'63,8%']]
+        ],
+        total:['Tổng cộng','',[1,'6'],[1,'278,3 h'],[1,'78'],[1,'72,6%']]
+      },
+      'Hiệu suất thiết bị': {
+        filters:['group','object'],
+        kpis:[['OEE bình quân','72,6%','',' 4/6 thiết bị đủ dữ liệu'],['Availability','86,4%',''],['Performance','84,1%',''],['Quality','—','',' Chưa thu thập trong POC']],
+        cols:[R('Thiết bị'),R('Nhóm'),R('Availability',1),R('Performance',1),R('Quality',1),R('OEE',1),R('Dữ liệu')],
+        rows:[
+          ['WLD-A-0142',['m','Máy hàn'],[1,'93,2%'],[1,'84,1%'],[1,'—','n'],[1,'78,4%'],['t','ok','Đủ dữ liệu']],
+          ['WLD-B-0217',['m','Máy hàn'],[1,'65,0%'],[1,'84,2%'],[1,'—','n'],[1,'54,7%'],['t','ok','Đủ dữ liệu']],
+          ['CMP-A-0331',['m','Máy nén khí'],[1,'90,6%'],[1,'89,6%'],[1,'—','n'],[1,'81,2%'],['t','ok','Đủ dữ liệu']],
+          ['CMP-B-0348',['m','Máy nén khí'],[1,'57,4%'],[1,'80,7%'],[1,'—','n'],[1,'46,3%'],['t','w','Thiếu 2 ca']],
+          ['TRC-01-7742',['m','Xe tải cẩu'],[1,'76,6%'],[1,'90,7%'],[1,'—','n'],[1,'69,5%','w'],['t','w','Phương pháp tạm tính']],
+          ['TRC-02-7815',['m','Xe tải cẩu'],[1,'—','n'],[1,'—','n'],[1,'—','n'],[1,'—','n'],['t','n','Mất kết nối']]
+        ],
+        total:null
+      }
+    }
+  },
+  rptrec: {
+    objLabel: {'Đối soát dữ liệu':'Thiết bị','Chi phí':'Thiết bị'},
+    types: {
+      'Đối soát dữ liệu': {
+        filters:['object','project'],
+        kpis:[['Dữ liệu IoT','251,9','h'],['Dữ liệu thủ công','260,0','h'],['Chênh lệch','8,1','h'],['Tỷ lệ sai lệch','3,2%','',' Ngưỡng POC ≤ 5%']],
+        cols:[R('Thiết bị'),R('Kỳ / ca'),R('Dữ liệu IoT',1),R('Dữ liệu thủ công',1),R('Chênh lệch',1),R('% sai lệch',1),R('Kết quả')],
+        rows:[
+          ['WLD-A-0142',['m','01–11/09 · 3 ca'],[1,'48,3 h'],[1,'48,8 h'],[1,'+0,5 h'],[1,'1,0%'],['t','ok','Đạt']],
+          ['WLD-B-0217',['m','01–11/09 · 3 ca'],[1,'36,4 h'],[1,'35,5 h'],[1,'−0,9 h'],[1,'2,5%'],['t','ok','Đạt']],
+          ['CMP-A-0331',['m','01–11/09 · 3 ca'],[1,'76,1 h'],[1,'77,0 h'],[1,'+0,9 h'],[1,'1,2%'],['t','ok','Đạt']],
+          ['CMP-B-0348',['m','01–11/09 · 3 ca'],[1,'48,2 h'],[1,'49,0 h'],[1,'+0,8 h'],[1,'1,6%'],['t','ok','Đạt']],
+          ['TRC-01-7742',['m','01–11/09 · 3 ca'],[1,'42,9 h'],[1,'43,5 h'],[1,'+0,6 h'],[1,'1,4%'],['t','ok','Đạt']],
+          ['TRC-02-7815',['m','01–11/09 · 2 ca'],[1,'26,4 h'],[1,'46,2 h'],[1,'+19,8 h','b'],[1,'75,0%','b'],['t','b','Cần kiểm tra']]
+        ],
+        total:['Tổng cộng','',[1,'251,9 h'],[1,'260,0 h'],[1,'+8,1 h'],[1,'3,2%'],'']
+      },
+      'Chi phí': {
+        filters:['group','project'],
+        kpis:[['Tổng chi phí','412,6','tr đ',' Đơn giá tạm tính'],['Tổng giờ máy','251,9','h'],['Chi phí / giờ máy','1,64','tr đ'],['Thiết bị chi phí cao nhất','TRC-01','',' 36,5 tr đ']],
+        cols:[R('Thiết bị'),R('Dự án'),R('Giờ máy',1),R('Đơn giá (đ/h)',1),R('Chi phí ước tính',1),R('Trạng thái đối soát')],
+        rows:[
+          ['WLD-A-0142',['m','Block A-04'],[1,'48,3'],[1,'320.000'],[1,'15.456.000'],['t','ok','Đã đối soát']],
+          ['WLD-B-0217',['m','Jacket LQ-02'],[1,'36,4'],[1,'320.000'],[1,'11.648.000'],['t','w','Chờ xác nhận']],
+          ['CMP-A-0331',['m','Dùng chung'],[1,'76,1'],[1,'180.000'],[1,'13.698.000'],['t','ok','Đã đối soát']],
+          ['CMP-B-0348',['m','Dùng chung'],[1,'48,2'],[1,'180.000'],[1,'8.676.000'],['t','ok','Đã đối soát']],
+          ['TRC-01-7742',['m','Block A-04'],[1,'42,9'],[1,'850.000'],[1,'36.465.000'],['t','ok','Đã đối soát']],
+          ['TRC-02-7815',['m','Jacket LQ-02'],[1,'26,4'],[1,'850.000'],[1,'22.440.000'],['t','b','Lệch vượt ngưỡng']]
+        ],
+        total:['Tổng cộng','',[1,'278,3'],'',[1,'108.383.000'],'']
+      }
+    }
+  }
+};
+
+const TITLES = {
+  dash:['Dashboard','Dashboard tổng quan'],
+  oee:['Dashboard','Theo dõi OEE/OLE'],
+  kpi:['Dashboard','Theo dõi KPI POC'],
+  chart:['Dashboard','Biểu đồ hiệu suất'],
+  mon:['Giám sát vận hành thiết bị','Giám sát dữ liệu vận hành'],
+  devstatus:['Giám sát vận hành thiết bị','Theo dõi trạng thái thiết bị'],
+  conn:['Giám sát vận hành thiết bị','Kết nối & chất lượng dữ liệu IoT'],
+  op:['Theo dõi người vận hành','Phiên sử dụng thiết bị & đối soát'],
+  confirm:['Theo dõi người vận hành','Xác nhận dữ liệu thực tế'],
+  rptops:['Báo cáo','Báo cáo vận hành & hiệu suất'],
+  rptrec:['Báo cáo','Báo cáo đối soát & chi phí'],
+  devweld:['Quản lý thiết bị','Quản lý máy hàn'],
+  devcomp:['Quản lý thiết bị','Quản lý máy nén khí'],
+  devcrane:['Quản lý thiết bị','Quản lý xe tải cẩu'],
+  msOper:['Quản lý danh mục','Danh mục nhân sự vận hành'],
+  msDev:['Quản lý danh mục','Danh mục nhóm thiết bị'],
+  msProj:['Quản lý danh mục','Danh mục dự án'],
+  msArea:['Quản lý danh mục','Danh mục khu vực & xưởng'],
+  msShift:['Quản lý danh mục','Danh mục ca làm việc'],
+  msStop:['Quản lý danh mục','Danh mục lý do dừng máy'],
+  excel:['Quản lý danh mục','Nạp dữ liệu từ Excel'],
+  account:['Quản lý tài khoản & phân quyền','Tài khoản người dùng'],
+  role:['Quản lý tài khoản & phân quyền','Vai trò & nhóm quyền'],
+  perm:['Quản lý tài khoản & phân quyền','Ma trận phân quyền'],
+  audit:['Quản lý tài khoản & phân quyền','Nhật ký hoạt động']
+};
+
+class Component extends DCLogic {
+  state = {page:'dash', detail:null, sel:'WLD-A-0142', ses:'S-2038', q:'', types:{weld:true,comp:true,crane:true}, zoom:1, px:0, py:0, drag:null};
+
+  badge(s){ return 'background:'+s.bg+';color:'+s.fg; }
+
+  rcell(c){
+    if (Array.isArray(c)) {
+      if (c[0]==='m') return {text:c[1], tdsp:'color:#5d5d60', sp:'', cls:''};
+      if (c[0]==='t') return {text:c[2], tdsp:'', sp:ST_[c[1]], cls:'tag'};
+      return {text:c[1], cls:'', sp:'',
+        tdsp:'text-align:right;font-variant-numeric:tabular-nums;'+(c[2]==='b'?'color:#8c3b1e;font-weight:600':c[2]==='w'?'color:#6a4f13':c[2]==='n'?'color:#9aa1a8':'')};
+    }
+    return {text:c, tdsp:'', sp:'', cls:''};
+  }
+
+  report(st){
+    const rp = RPT[st.page];
+    const isRpt = !!rp;
+    if (!isRpt) return {isReport:false, isRptOps:false, isRptRec:false};
+    const keys = Object.keys(rp.types);
+    const key = (st.rptType && rp.types[st.rptType]) ? st.rptType : keys[0];
+    const t = rp.types[key];
+    const empty = !!(this.props.reportEmptyState ?? false);
+    const ranges = ['Hôm nay','Tuần này','Tháng này','Tuỳ chỉnh'];
+    return {
+      isReport:true, isRptOps: st.page==='rptops', isRptRec: st.page==='rptrec',
+      rptTypes: keys.map(k => ({key:k, label:k, on:k===key?'1':'0', go:()=>this.setState({rptType:k})})),
+      rptTitle: key, rptObjLabel: rp.objLabel[key],
+      fGroup: t.filters.includes('group'), fObject: t.filters.includes('object'), fProject: t.filters.includes('project'),
+      rptRanges: ranges.map(r => ({key:r, label:r, on:(st.rptRange||'Tuỳ chỉnh')===r?'1':'0', go:()=>this.setState({rptRange:r})})),
+      rptCustom: (st.rptRange||'Tuỳ chỉnh')==='Tuỳ chỉnh',
+      rptKpis: t.kpis.map(([l,v,u,s]) => ({l, v, u:u||'', s:s||'', hasS: s?true:false})),
+      rptCols: t.cols.map(c => ({label:c.label, sp:'text-align:'+c.align})),
+      rptRows: empty ? [] : t.rows.map(r => ({cells:r.map(c => this.rcell(c))})),
+      rptTotal: (empty || !t.total) ? [] : [{cells:t.total.map(c => this.rcell(c))}],
+      rptEmpty: empty,
+      rptMinW: (t.cols.length*128)+'px',
+      exportOpen: st.exp ? '1':'0',
+      toggleExport: () => this.setState({exp: !st.exp}),
+      closeExport: () => this.setState({exp:false})
+    };
+  }
+
+  decorate(d){
+    const st = S[d.status];
+    const conn = d.conn==='on' ? {...S.run, label:'Trực tuyến'} : {...S.off, label:'Mất kết nối'};
+    return Object.assign({}, d, {
+      statusLabel: st.label, badge: this.badge(st), dot: st.dot, dash: st.dash,
+      dotStyle: 'width:10px;height:10px;border-radius:50%;margin-top:5px;flex:none;background:'+st.dot,
+      ring: d.status==='run' ? 'rgba(61,138,91,.35)' : d.status==='error' ? 'rgba(180,85,45,.35)' : 'rgba(29,31,32,.12)',
+      connLabel: conn.label, connBadge: this.badge(conn),
+      icon: {__html: ICON[d.type]},
+      tf: 'translate('+d.x+','+d.y+')',
+      on: this.state.sel===d.id ? '1' : '0',
+      pick: () => this.setState({sel:d.id}),
+      timeline: d.timeline.map(([k,w]) => ({title:k, style:'flex:'+w+';background:'+TLC[k]}))
+    });
+  }
+
+  renderVals(){
+    const st = this.state;
+    const q = st.q.trim().toLowerCase();
+    const list = DEV.filter(d => st.types[d.type] && (!q || (d.id+' '+d.name+' '+d.area).toLowerCase().includes(q))).map(d => this.decorate(d));
+    const selRaw = DEV.find(d => d.id===st.sel);
+    const sel = selRaw ? this.decorate(selRaw) : null;
+    const sesRaw = SESS.find(s => s.id===st.ses) || SESS[0];
+    const mgmtT = MGMT[st.page];
+    const ms = MS[st.page];
+    const TAGBG = {ok:'background:#e0ebe3;color:#255a3a', w:'background:#eee6d4;color:#6a4f13', n:'background:#e9e9ea;color:#5d5d60'};
+    const cell = c => Array.isArray(c)
+      ? (c[0]==='g' ? {text:c[1], cls:'', sp:'color:#5d5d60'} : {text:c[1], cls:'tag', sp:TAGBG[c[0]]})
+      : {text:c, cls:'', sp:''};
+    const mgmt = (mgmtT ? DEV.filter(d => d.type===mgmtT.type) : []).map(d => ({...d, asset:'TS-'+d.id.slice(-4), node: NODE[d.id]}));
+    const w = 1000/st.zoom, h = 520/st.zoom;
+    const devPct = v => v==null ? '—' : v.toFixed(1).replace('.',',')+'%';
+    return {
+      isDash: st.page==='dash', isMon: st.page==='mon', isOp: st.page==='op',
+      isOee: st.page==='oee', isKpi: st.page==='kpi', isChart: st.page==='chart',
+      isDevStatus: st.page==='devstatus', isConn: st.page==='conn', isConfirm: st.page==='confirm',
+      ...this.report(st),
+      isDevMgmt: MGMT[st.page]!==undefined,
+      isMaster: !!ms, msTitle: ms?ms.title:'', msAdd: ms?ms.add:'', msSearch: ms?ms.search:'',
+      msTotal: ms?ms.total:0, msShown: ms?ms.rows.length:0,
+      masterCols: ms?ms.cols.map(c=>({label:c})):[],
+      masterRows: ms?ms.rows.map(r=>({cells:r.map(cell)})):[],
+      isRole: st.page==='role', isAudit: st.page==='audit',
+      mgmtType: MGMT[st.page] ? MGMT[st.page].label : '',
+      mgmtDevices: mgmt.map(d => ({...d, open: () => this.setState({detail:d.id})})),
+      mgmtSel: mgmt.find(d => d.id===st.detail) || mgmt[0] || null, mgmtCount: mgmt.length,
+      detailModeKey: (this.props.detailMode ?? 'Popup')==='Popup' ? 'popup' : 'side',
+      detailOpen: st.detail ? '1' : '0',
+      closeDetail: () => this.setState({detail:null}),
+      showQr: this.props.showQr ?? true,
+      showBulkQr: this.props.bulkQrPrint ?? true,
+      isExcel: st.page==='excel', isAccount: st.page==='account', isPerm: st.page==='perm',
+      nav: GROUPS.map(([k,label,p,subs]) => {
+        const act = subs.some(s => s[0]===st.page);
+        return {key:k, label, icon:I(p), on: act ? '1':'0',
+          go: () => this.setState({page: subs[0][0], detail:null}),
+          subs: (SIDE_SUB.includes(k) && act)
+            ? subs.map(([sk,slabel]) => ({key:sk, label:slabel, on: st.page===sk?'1':'0',
+                go: () => this.setState({page:sk, detail:null})}))
+            : []};
+      }),
+      hasTabs: !SIDE_SUB.includes((GROUPS.find(g => g[3].some(s => s[0]===st.page)) || GROUPS[0])[0]),
+      tabs: (GROUPS.find(g => g[3].some(s => s[0]===st.page)) || GROUPS[0])[3]
+        .map(([k,label]) => ({key:k, label, on: st.page===k?'1':'0', go: () => this.setState({page:k})})),
+      crumb: TITLES[st.page][0], title: TITLES[st.page][1],
+      goDash: () => this.setState({page:'dash'}), goMon: () => this.setState({page:'mon'}), goOp: () => this.setState({page:'op'}),
+      devices: list, mapDevices: list, count: list.length,
+      sel, hasSel: !!sel, noSel: !sel,
+      q: st.q, onSearch: e => this.setState({q:e.target.value}),
+      fWeld: st.types.weld?'1':'0', fComp: st.types.comp?'1':'0', fCrane: st.types.crane?'1':'0',
+      tWeld: () => this.toggle('weld'), tComp: () => this.toggle('comp'), tCrane: () => this.toggle('crane'),
+      viewBox: st.px+' '+st.py+' '+w+' '+h,
+      zoomIn: () => this.setState({zoom: Math.min(3, st.zoom*1.3)}),
+      zoomOut: () => this.setState({zoom: Math.max(1, st.zoom/1.3)}),
+      resetView: () => this.setState({zoom:1, px:0, py:0}),
+      dragStart: e => this.setState({drag:{x:e.clientX, y:e.clientY, px:st.px, py:st.py}}),
+      dragMove: e => { const d = st.drag; if(!d) return; const k = (1000/st.zoom)/e.currentTarget.clientWidth;
+        this.setState({px: d.px-(e.clientX-d.x)*k, py: d.py-(e.clientY-d.y)*k}); },
+      dragEnd: () => { if(this.state.drag) this.setState({drag:null}); },
+      util: UTIL.map(u => ({id:u.id, note:u.note,
+        s1:'width:'+u.p[0]+'%;background:#5980a6', s2:'width:'+u.p[1]+'%;background:#b5cade', s3:'width:'+u.p[2]+'%;background:#d4d4d7'})),
+      sessions: SESS.map(s => ({...s, dev2: devPct(s.d),
+        devStyle: s.d!=null && s.d>5 ? 'color:#8c3b1e;font-weight:500' : 'color:#5d5d60',
+        badge: this.badge(SESS_BADGE[s.state]), on: st.ses===s.id?'1':'0',
+        pick: () => this.setState({ses:s.id})})),
+      ses: {...sesRaw, badge: this.badge(SESS_BADGE[sesRaw.state]),
+        rows: sesRaw.rows.map(r => ({k:r[0], a:r[1], b:r[2], d:r[3],
+          dStyle: (parseFloat(String(r[3]).replace(',','.'))>5) ? 'color:#8c3b1e;font-weight:500' : 'color:#5d5d60'}))}
+    };
+  }
+  toggle(t){ this.setState(s => ({types: {...s.types, [t]: !s.types[t]}})); }
+}
+</script>
+</body>
+</html>
